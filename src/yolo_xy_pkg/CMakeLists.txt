@@ -15,8 +15,19 @@ find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(OpenCV REQUIRED)
 find_package(cv_bridge REQUIRED)
-find_package(ament_index_cpp REQUIRED)  # 新增这行
+find_package(ament_index_cpp REQUIRED) 
 find_package(sensor_msgs REQUIRED)
+
+
+# CUDA
+# set(CUDA_TOOLKIT_ROOT_DIR "/usr/local/cuda")
+# find_package(CUDA 11 REQUIRED)
+
+# set(CMAKE_CUDA_STANDARD 11)
+# set(CMAKE_CUDA_STANDARD_REQUIRED ON)
+# # !CUDA
+
+
 
 include_directories(
   include
@@ -32,7 +43,7 @@ set(PROJECT_SOURCES
 add_executable(yolo_xy_node ${PROJECT_SOURCES})
 target_link_libraries(yolo_xy_node ${OpenCV_LIBS})
 
-# 链接ROS2依赖（核心：ament_target_dependencies是ROS2的关键）
+
 ament_target_dependencies(yolo_xy_node
   rclcpp
   std_msgs

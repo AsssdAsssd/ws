@@ -21,7 +21,7 @@ public:
     {
         init();
         command_subscribe_ = this->create_subscription<sensor_msgs::msg::Image>("image", 10, std::bind(&TargetxySubscriber::command_callback, this, std::placeholders::_1));
-        RCLCPP_INFO(this->get_logger(), "接接收者节点已启动");
+        RCLCPP_INFO(this->get_logger(), "接收者节点已启动");
     }
 
 private:
@@ -37,11 +37,11 @@ private:
         }
 
         std::vector<Detection> output = inf->runInference(frame);
-        int detections = output.size();
-        RCLCPP_INFO(this->get_logger(), "Number of detections: %d", detections);
 
-        // 增加：看框
-        drawbox(output, frame);
+        int detections = output.size();
+        RCLCPP_INFO(this->get_logger(), "目标数: %d", detections);
+        // 显示输出
+        draw(output, frame);
 
         float scale = 0.8;
         cv::resize(frame, frame, cv::Size(frame.cols * scale, frame.rows * scale));
@@ -50,13 +50,11 @@ private:
         if (cv::waitKey(1) == 'q')
         {
             std::cout << "程序已退出！" << std::endl;
-            rclcpp::shutdown(); // 正确退出ROS2节点，而非break
+            rclcpp::shutdown();
             return;
         }
 
-        // 先只输出xy跑通一下
-        std::vector<float>
-            centerX(detections);
+        std::vector<float> centerX(detections);
         std::vector<float> centerY(detections);
         if (detections)
         {
@@ -98,7 +96,7 @@ private:
         }
     }
 
-    void drawbox(const std::vector<Detection> &output, cv::Mat &frame)
+    void draw(const std::vector<Detection> &output, cv::Mat &frame)
     {
         int detections = output.size();
         for (int j = 0; j < detections; ++j)
@@ -109,33 +107,31 @@ private:
             float centerX = box.x + box.width / 2.0f;
             float centerY = box.y + box.height / 2.0f;
 
-            cv::rectangle(frame, box, color, 8);
+            cv::rectangle(frame, box, color, 5);
             cv::circle(frame, cv::Point(centerX, centerY), 5, cv::Scalar(0, 0, 255), -1);
 
             std::string classString = detection.className + " " + to_string(detection.confidence).substr(0, 4);
             std::string centerText = "(" + to_string(centerX).substr(0, 5) + ", " + to_string(centerY).substr(0, 5) + ")";
             std::string showText = classString + " |" + centerText;
 
-            // 计算文字框大小
             cv::Size textSize = cv::getTextSize(showText, cv::FONT_HERSHEY_DUPLEX, 0.8, 2, 0);
-            cv::Rect textBox(box.x, box.y - 50, textSize.width + 10, textSize.height + 20);
+            cv::Rect textBox(box.x, box.y - 25, textSize.width + 5, textSize.height + 10);
 
-            // 绘制文字背景框+文字
             cv::rectangle(frame, textBox, color, cv::FILLED);
-            cv::putText(frame, showText, cv::Point(box.x + 5, box.y - 15),
+            cv::putText(frame, showText, cv::Point(box.x + 3, box.y - 7),
                         cv::FONT_HERSHEY_DUPLEX, 0.8, cv::Scalar(0, 0, 0), 2, 0);
         }
     }
 
     void init()
     {
-
         this->declare_parameter<std::string>("projectBasePath", "/src/yoloxy_pkg/");
         projectBasePath = this->get_parameter("projectBasePath").as_string();
         this->declare_parameter<int>("imgsz", 640);
         imgsz = this->get_parameter("imgsz").as_int();
+        this->declare_parameter<bool>("runGPU", "false");
+        bool runOnGPU = this->get_parameter("runGPU").as_bool();
 
-        bool runOnGPU = false;
         inf = std::make_unique<Inference>(
             projectBasePath + "resource/best.onnx",
             cv::Size(imgsz, imgsz),
@@ -152,10 +148,9 @@ private:
 };
 int main(int argc, char *argv[])
 {
-
     rclcpp::init(argc, argv);
     rclcpp::spin(std::make_shared<TargetxySubscriber>());
     rclcpp::shutdown();
-    cv::destroyAllWindows(); // 新增
+    cv::destroyAllWindows();
     return 0;
 }

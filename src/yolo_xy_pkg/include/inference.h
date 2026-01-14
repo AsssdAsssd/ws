@@ -36,13 +36,13 @@ private:
     std::string classesPath{};
     bool cudaEnabled{};
 
-    std::vector<std::string> classes{"robo0", "robo1", "robo2", "robo3", "robo4", "robo5","robo6"};
+    std::vector<std::string> classes; //{"robo0", "robo1", "robo2", "robo3", "robo4", "robo5","robo6"};
 
     cv::Size2f modelShape{};
 
-    float modelConfidenceThreshold {0.2};
-    float modelScoreThreshold      {0.4};
-    float modelNMSThreshold        {0.50};
+    float modelConfidenceThreshold{0.2};
+    float modelScoreThreshold{0.4};
+    float modelNMSThreshold{0.50};
 
     bool letterBoxForSquare = true;
 

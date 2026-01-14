@@ -6,9 +6,8 @@ Inference::Inference(const std::string &onnxModelPath, const cv::Size &modelInpu
     modelShape = modelInputShape;
     classesPath = classesTxtFile;
     cudaEnabled = runWithCuda;
-
+    loadClassesFromFile();
     loadOnnxNetwork();
-    // loadClassesFromFile(); The classes are hard-coded for this example
 }
 
 std::vector<Detection> Inference::runInference(const cv::Mat &input)
@@ -18,7 +17,7 @@ std::vector<Detection> Inference::runInference(const cv::Mat &input)
         modelInput = formatToSquare(modelInput);
 
     cv::Mat blob;
-    cv::dnn::blobFromImage(modelInput, blob, 1.0/255.0, modelShape, cv::Scalar(), true, false);
+    cv::dnn::blobFromImage(modelInput, blob, 1.0 / 255.0, modelShape, cv::Scalar(), true, false);
     net.setInput(blob);
 
     std::vector<cv::Mat> outputs;
@@ -52,7 +51,7 @@ std::vector<Detection> Inference::runInference(const cv::Mat &input)
     {
         if (yolov8)
         {
-            float *classes_scores = data+4;
+            float *classes_scores = data + 4;
 
             cv::Mat scores(1, classes.size(), CV_32FC1, classes_scores);
             cv::Point class_id;
@@ -85,7 +84,7 @@ std::vector<Detection> Inference::runInference(const cv::Mat &input)
 
             if (confidence >= modelConfidenceThreshold)
             {
-                float *classes_scores = data+5;
+                float *classes_scores = data + 5;
 
                 cv::Mat scores(1, classes.size(), CV_32FC1, classes_scores);
                 cv::Point class_id;
@@ -152,7 +151,9 @@ void Inference::loadClassesFromFile()
     {
         std::string classLine;
         while (std::getline(inputFile, classLine))
+        {
             classes.push_back(classLine);
+        }
         inputFile.close();
     }
 }
