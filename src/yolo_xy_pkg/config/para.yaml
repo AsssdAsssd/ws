@@ -1,0 +1,4 @@
+/targetxy_publisher:
+  ros__parameters:
+    projectBasePath: "/home/zhongrui/code/ws/src/yolo_xy_pkg/"
+    imgsz: 640

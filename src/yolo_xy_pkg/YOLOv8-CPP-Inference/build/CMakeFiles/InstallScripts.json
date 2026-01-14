@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/zhongrui/env/ultralytics-8.1.0/examples/YOLOv8-CPP-Inference/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

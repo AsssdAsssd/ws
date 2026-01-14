@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/zhongrui/code/ws/build/yolo_xy_pkg/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
