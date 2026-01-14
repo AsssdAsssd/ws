@@ -3,42 +3,32 @@
 #include <getopt.h>
 #include <iomanip>
 #include <opencv2/opencv.hpp>
+
+#include <cv_bridge/cv_bridge.h>
+#include <sensor_msgs/image_encodings.hpp>
 #include "rclcpp/rclcpp.hpp"
 #include "inference.h"
 #include "std_msgs/msg/string.hpp"
-
+#include "sensor_msgs/msg/image.hpp"
 using namespace std;
 using namespace cv;
 using namespace std::chrono_literals;
 
-class TargetxyPublisher : public rclcpp::Node
+class TargetxySubscriber : public rclcpp::Node
 {
 public:
-    TargetxyPublisher() : Node("targetxy_publisher")
+    TargetxySubscriber() : Node("targetxysubscriber")
     {
         init();
-        // 创建发布者，发布String类型消息到"topic"话题
-        publisher_ = this->create_publisher<std_msgs::msg::String>("xy_topic", 10);
-        // 创建定时器，每500ms发布一次消息
-        timer_ = this->create_wall_timer(50ms, std::bind(&TargetxyPublisher::timer_callback, this));
-        RCLCPP_INFO(this->get_logger(), "发布者节点已启动");
-    }
-
-    ~TargetxyPublisher()
-    {
-        if (cap.isOpened())
-        {
-            cap.release();
-        }
-        cv::destroyAllWindows();
-        RCLCPP_INFO(this->get_logger(), "关闭");
+        command_subscribe_ = this->create_subscription<sensor_msgs::msg::Image>("image", 10, std::bind(&TargetxySubscriber::command_callback, this, std::placeholders::_1));
+        RCLCPP_INFO(this->get_logger(), "接接收者节点已启动");
     }
 
 private:
-    void timer_callback()
+    void command_callback(const sensor_msgs::msg::Image::SharedPtr msg)
     {
         cv::Mat frame;
-        cap >> frame;
+        frame = processe_image(msg);
 
         if (frame.empty())
         {
@@ -55,7 +45,7 @@ private:
 
         float scale = 0.8;
         cv::resize(frame, frame, cv::Size(frame.cols * scale, frame.rows * scale));
-        cv::imshow("Camera", frame);
+        cv::imshow("Camera Detection", frame);
 
         if (cv::waitKey(1) == 'q')
         {
@@ -79,25 +69,35 @@ private:
             }
         }
 
-        // 创建消息对象
-        auto message = std_msgs::msg::String();
         if (detections)
         {
             std::string all_centers;
             for (int j = 0; j < detections; ++j)
             {
-                all_centers += "中心点" + to_string(j + 1) + ":(" + to_string(centerX[j]).substr(0, 5) + "," + to_string(centerY[j]).substr(0, 5) + ") ";
+                all_centers += "center" + to_string(j + 1) + ":(" + to_string(centerX[j]).substr(0, 5) + "," + to_string(centerY[j]).substr(0, 5) + ") ";
             }
-            message.data = all_centers;
+            RCLCPP_INFO(this->get_logger(), "'%s'", all_centers.c_str());
         }
         else
         {
-            message.data = "暂无中心点";
+            RCLCPP_INFO(this->get_logger(), "暂无中心点");
         }
-        // 发布消息
-        publisher_->publish(message);
-        RCLCPP_INFO(this->get_logger(), "发布消息: '%s'", message.data.c_str());
     }
+    cv::Mat processe_image(const sensor_msgs::msg::Image::SharedPtr &processed_image)
+    {
+        try
+        {
+            // 将ROS图像转换为OpenCV格式
+            cv_bridge::CvImagePtr cv_ptr = cv_bridge::toCvCopy(processed_image, sensor_msgs::image_encodings::BGR8);
+            return cv_ptr->image;
+        }
+        catch (const cv_bridge::Exception &e)
+        {
+            RCLCPP_ERROR(this->get_logger(), "无法显示图像: %s", e.what());
+            return cv::Mat();
+        }
+    }
+
     void drawbox(const std::vector<Detection> &output, cv::Mat &frame)
     {
         int detections = output.size();
@@ -108,10 +108,6 @@ private:
             cv::Scalar color = detection.color;
             float centerX = box.x + box.width / 2.0f;
             float centerY = box.y + box.height / 2.0f;
-
-            // std::cout << "目标" << j + 1
-            //           << " | 置信度：" << fixed << setprecision(2) << detection.confidence
-            //           << " | 中心点坐标：(" << centerX << ", " << centerY << ")" << std::endl;
 
             cv::rectangle(frame, box, color, 8);
             cv::circle(frame, cv::Point(centerX, centerY), 5, cv::Scalar(0, 0, 255), -1);
@@ -146,31 +142,20 @@ private:
             projectBasePath + "resource/classes.txt",
             runOnGPU);
 
-        cap.open(0);
-        if (!cap.isOpened())
-        {
-            RCLCPP_ERROR(this->get_logger(), "Error: 无法打开摄像头");
-            rclcpp::shutdown();
-            return;
-        }
-        cap.set(cv::CAP_PROP_FRAME_WIDTH, 640);
-        cap.set(cv::CAP_PROP_FRAME_HEIGHT, 480);
         cv::namedWindow("Camera Detection", cv::WINDOW_NORMAL);
     }
 
-    rclcpp::TimerBase::SharedPtr timer_;
-    rclcpp::Publisher<std_msgs::msg::String>::SharedPtr publisher_;
+    rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr command_subscribe_;
     std::string projectBasePath;
-    int imgsz;
     std::unique_ptr<Inference> inf;
-    cv::VideoCapture cap;
+    int imgsz;
 };
-
 int main(int argc, char *argv[])
 {
 
     rclcpp::init(argc, argv);
-    rclcpp::spin(std::make_shared<TargetxyPublisher>());
+    rclcpp::spin(std::make_shared<TargetxySubscriber>());
     rclcpp::shutdown();
+    cv::destroyAllWindows(); // 新增
     return 0;
 }

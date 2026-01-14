@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/zhongrui/code/ws/build/test_pkg/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

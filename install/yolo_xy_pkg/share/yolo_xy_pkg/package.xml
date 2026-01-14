@@ -8,6 +8,8 @@
   <license>Apache-2.0</license>
   <depend>rclcpp</depend>
   <depend>std_msgs</depend>
+   <depend>sensor_msgs</depend>
+   <depend>cv_bridge</depend>
   <depend>opencv4</depend>
   <buildtool_depend>ament_cmake</buildtool_depend>
 

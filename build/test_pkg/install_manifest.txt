@@ -1,0 +1,16 @@
+/home/zhongrui/code/ws/install/test_pkg/lib/test_pkg/test_node
+/home/zhongrui/code/ws/install/test_pkg/share/ament_index/resource_index/package_run_dependencies/test_pkg
+/home/zhongrui/code/ws/install/test_pkg/share/ament_index/resource_index/parent_prefix_path/test_pkg
+/home/zhongrui/code/ws/install/test_pkg/share/test_pkg/environment/ament_prefix_path.sh
+/home/zhongrui/code/ws/install/test_pkg/share/test_pkg/environment/ament_prefix_path.dsv
+/home/zhongrui/code/ws/install/test_pkg/share/test_pkg/environment/path.sh
+/home/zhongrui/code/ws/install/test_pkg/share/test_pkg/environment/path.dsv
+/home/zhongrui/code/ws/install/test_pkg/share/test_pkg/local_setup.bash
+/home/zhongrui/code/ws/install/test_pkg/share/test_pkg/local_setup.sh
+/home/zhongrui/code/ws/install/test_pkg/share/test_pkg/local_setup.zsh
+/home/zhongrui/code/ws/install/test_pkg/share/test_pkg/local_setup.dsv
+/home/zhongrui/code/ws/install/test_pkg/share/test_pkg/package.dsv
+/home/zhongrui/code/ws/install/test_pkg/share/ament_index/resource_index/packages/test_pkg
+/home/zhongrui/code/ws/install/test_pkg/share/test_pkg/cmake/test_pkgConfig.cmake
+/home/zhongrui/code/ws/install/test_pkg/share/test_pkg/cmake/test_pkgConfig-version.cmake
+/home/zhongrui/code/ws/install/test_pkg/share/test_pkg/package.xml

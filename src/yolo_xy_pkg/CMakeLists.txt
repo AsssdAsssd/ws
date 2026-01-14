@@ -14,7 +14,9 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(OpenCV REQUIRED)
+find_package(cv_bridge REQUIRED)
 find_package(ament_index_cpp REQUIRED)  # 新增这行
+find_package(sensor_msgs REQUIRED)
 
 include_directories(
   include
@@ -35,6 +37,8 @@ ament_target_dependencies(yolo_xy_node
   rclcpp
   std_msgs
   OpenCV
+    cv_bridge
+    sensor_msgs
    ament_index_cpp
 )
 
