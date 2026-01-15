@@ -17,7 +17,7 @@ find_package(OpenCV REQUIRED)
 find_package(cv_bridge REQUIRED)
 find_package(ament_index_cpp REQUIRED) 
 find_package(sensor_msgs REQUIRED)
-
+find_package(center_msg_pkg REQUIRED)
 
 # CUDA
 # set(CUDA_TOOLKIT_ROOT_DIR "/usr/local/cuda")
@@ -51,6 +51,7 @@ ament_target_dependencies(yolo_xy_node
     cv_bridge
     sensor_msgs
    ament_index_cpp
+   center_msg_pkg
 )
 
 install(TARGETS yolo_xy_node

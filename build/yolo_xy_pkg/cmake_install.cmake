@@ -54,7 +54,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/yolo_xy_pkg/yolo_xy_node")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/yolo_xy_pkg/yolo_xy_node"
-         OLD_RPATH "/opt/ros/humble/lib:/usr/local/lib:"
+         OLD_RPATH "/opt/ros/humble/lib:/home/zhongrui/code/ws/install/center_msg_pkg/lib:/usr/local/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/yolo_xy_pkg/yolo_xy_node")

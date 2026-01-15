@@ -11,6 +11,8 @@
    <depend>sensor_msgs</depend>
    <depend>cv_bridge</depend>
   <depend>opencv4</depend>
+
+  <depend>center_msg_pkg</depend>
   <buildtool_depend>ament_cmake</buildtool_depend>
 
   <test_depend>ament_lint_auto</test_depend>

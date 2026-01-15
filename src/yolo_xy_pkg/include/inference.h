@@ -24,7 +24,7 @@ struct Detection
 class Inference
 {
 public:
-    Inference(const std::string &onnxModelPath, const cv::Size &modelInputShape = {640, 640}, const std::string &classesTxtFile = "", const bool &runWithCuda = true);
+    Inference(const std::string &onnxModelPath, const cv::Size &modelInputShape = {640, 640}, const std::string &classesTxtFile = "", const bool &runWithCuda = true,const float &ConfidenceThreshold=0.6,const float &ScoreThreshold=0.6,const float &NMSThreshold=0.6);
     std::vector<Detection> runInference(const cv::Mat &input);
 
 private:
@@ -40,9 +40,9 @@ private:
 
     cv::Size2f modelShape{};
 
-    float modelConfidenceThreshold{0.2};
+    float modelConfidenceThreshold{0.4};
     float modelScoreThreshold{0.4};
-    float modelNMSThreshold{0.50};
+    float modelNMSThreshold{0.6};
 
     bool letterBoxForSquare = true;
 

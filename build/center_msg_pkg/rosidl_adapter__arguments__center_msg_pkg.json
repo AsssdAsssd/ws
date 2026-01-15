@@ -1,0 +1,7 @@
+{
+  "package_name": "center_msg_pkg",
+  "non_idl_tuples": [
+    "/home/zhongrui/code/ws/src/center_msg_pkg:msg/Center.msg",
+    "/home/zhongrui/code/ws/src/center_msg_pkg:msg/Singlecenter.msg"
+  ]
+}

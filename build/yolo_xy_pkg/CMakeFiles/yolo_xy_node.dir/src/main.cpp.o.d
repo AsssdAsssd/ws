@@ -785,4 +785,12 @@ CMakeFiles/yolo_xy_node.dir/src/main.cpp.o: \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__builder.hpp \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__traits.hpp \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__type_support.hpp \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+ /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/center.hpp \
+ /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/center__struct.hpp \
+ /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/singlecenter__struct.hpp \
+ /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/center__builder.hpp \
+ /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/center__traits.hpp \
+ /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/singlecenter__traits.hpp \
+ /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/center__type_support.hpp \
+ /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/rosidl_generator_cpp__visibility_control.hpp

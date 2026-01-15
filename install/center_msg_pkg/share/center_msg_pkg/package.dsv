@@ -1,0 +1,11 @@
+source;share/center_msg_pkg/hook/cmake_prefix_path.ps1
+source;share/center_msg_pkg/hook/cmake_prefix_path.dsv
+source;share/center_msg_pkg/hook/cmake_prefix_path.sh
+source;share/center_msg_pkg/hook/ld_library_path_lib.ps1
+source;share/center_msg_pkg/hook/ld_library_path_lib.dsv
+source;share/center_msg_pkg/hook/ld_library_path_lib.sh
+source;share/center_msg_pkg/local_setup.bash
+source;share/center_msg_pkg/local_setup.dsv
+source;share/center_msg_pkg/local_setup.ps1
+source;share/center_msg_pkg/local_setup.sh
+source;share/center_msg_pkg/local_setup.zsh

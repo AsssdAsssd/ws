@@ -1,0 +1,250 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter
+-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6")
+-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5")
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+-- Found PythonExtra: .so
+-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (1.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/zhongrui/code/ws/build/center_msg_pkg
+[  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[  5%] Built target ament_cmake_python_copy_center_msg_pkg
+running egg_info
+creating center_msg_pkg.egg-info
+writing center_msg_pkg.egg-info/PKG-INFO
+writing dependency_links to center_msg_pkg.egg-info/dependency_links.txt
+writing top-level names to center_msg_pkg.egg-info/top_level.txt
+writing manifest file 'center_msg_pkg.egg-info/SOURCES.txt'
+reading manifest file 'center_msg_pkg.egg-info/SOURCES.txt'
+writing manifest file 'center_msg_pkg.egg-info/SOURCES.txt'
+[  7%] [32mBuilding C object CMakeFiles/center_msg_pkg__rosidl_generator_c.dir/rosidl_generator_c/center_msg_pkg/msg/detail/center__functions.c.o[0m
+[ 10%] [32mBuilding C object CMakeFiles/center_msg_pkg__rosidl_generator_c.dir/rosidl_generator_c/center_msg_pkg/msg/detail/singlecenter__functions.c.o[0m
+[ 10%] Built target center_msg_pkg__cpp
+[ 12%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[ 15%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[ 17%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[ 17%] Built target ament_cmake_python_build_center_msg_pkg_egg
+[ 20%] [32m[1mLinking C shared library libcenter_msg_pkg__rosidl_generator_c.so[0m
+[ 20%] Built target center_msg_pkg__rosidl_generator_c
+[ 25%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[ 28%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[ 28%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/center_msg_pkg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/center_msg_pkg/msg/center__type_support.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/center_msg_pkg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/center_msg_pkg/msg/singlecenter__type_support.cpp.o[0m
+[ 35%] [32mBuilding CXX object CMakeFiles/center_msg_pkg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/center_msg_pkg/msg/detail/center__type_support.cpp.o[0m
+[ 38%] [32mBuilding CXX object CMakeFiles/center_msg_pkg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/center_msg_pkg/msg/detail/singlecenter__type_support.cpp.o[0m
+[ 41%] [32mBuilding CXX object CMakeFiles/center_msg_pkg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/center_msg_pkg/msg/detail/dds_fastrtps/center__type_support.cpp.o[0m
+[ 43%] [32mBuilding CXX object CMakeFiles/center_msg_pkg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/center_msg_pkg/msg/detail/dds_fastrtps/singlecenter__type_support.cpp.o[0m
+[ 48%] [32mBuilding CXX object CMakeFiles/center_msg_pkg__rosidl_typesupport_c.dir/rosidl_typesupport_c/center_msg_pkg/msg/center__type_support.cpp.o[0m
+[ 48%] [32mBuilding CXX object CMakeFiles/center_msg_pkg__rosidl_typesupport_c.dir/rosidl_typesupport_c/center_msg_pkg/msg/singlecenter__type_support.cpp.o[0m
+[ 51%] [32mBuilding C object CMakeFiles/center_msg_pkg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/center_msg_pkg/msg/detail/center__type_support.c.o[0m
+[ 53%] [32mBuilding C object CMakeFiles/center_msg_pkg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/center_msg_pkg/msg/detail/singlecenter__type_support.c.o[0m
+[ 58%] [32mBuilding CXX object CMakeFiles/center_msg_pkg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/center_msg_pkg/msg/detail/singlecenter__type_support_c.cpp.o[0m
+[ 58%] [32mBuilding CXX object CMakeFiles/center_msg_pkg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/center_msg_pkg/msg/detail/center__type_support_c.cpp.o[0m
+[ 61%] [32m[1mLinking CXX shared library libcenter_msg_pkg__rosidl_typesupport_c.so[0m
+[ 64%] [32m[1mLinking C shared library libcenter_msg_pkg__rosidl_typesupport_introspection_c.so[0m
+[ 64%] Built target center_msg_pkg__rosidl_typesupport_c
+[ 64%] Built target center_msg_pkg__rosidl_typesupport_introspection_c
+[ 66%] [32m[1mLinking CXX shared library libcenter_msg_pkg__rosidl_typesupport_cpp.so[0m
+[ 66%] Built target center_msg_pkg__rosidl_typesupport_cpp
+[ 69%] [32m[1mLinking CXX shared library libcenter_msg_pkg__rosidl_typesupport_introspection_cpp.so[0m
+[ 71%] [32m[1mLinking CXX shared library libcenter_msg_pkg__rosidl_typesupport_fastrtps_c.so[0m
+[ 74%] [32m[1mLinking CXX shared library libcenter_msg_pkg__rosidl_typesupport_fastrtps_cpp.so[0m
+[ 74%] Built target center_msg_pkg__rosidl_typesupport_introspection_cpp
+[ 74%] Built target center_msg_pkg__rosidl_typesupport_fastrtps_c
+[ 74%] Built target center_msg_pkg__rosidl_typesupport_fastrtps_cpp
+[ 74%] Built target center_msg_pkg
+[ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[ 76%] Built target center_msg_pkg__py
+[ 79%] [32mBuilding C object CMakeFiles/center_msg_pkg__rosidl_generator_py.dir/rosidl_generator_py/center_msg_pkg/msg/_singlecenter_s.c.o[0m
+[ 82%] [32mBuilding C object CMakeFiles/center_msg_pkg__rosidl_generator_py.dir/rosidl_generator_py/center_msg_pkg/msg/_center_s.c.o[0m
+[ 84%] [32m[1mLinking C shared library rosidl_generator_py/center_msg_pkg/libcenter_msg_pkg__rosidl_generator_py.so[0m
+[ 84%] Built target center_msg_pkg__rosidl_generator_py
+[ 89%] [32mBuilding C object CMakeFiles/center_msg_pkg__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/center_msg_pkg/_center_msg_pkg_s.ep.rosidl_typesupport_c.c.o[0m
+[ 89%] [32mBuilding C object CMakeFiles/center_msg_pkg__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/center_msg_pkg/_center_msg_pkg_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[ 92%] [32mBuilding C object CMakeFiles/center_msg_pkg__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/center_msg_pkg/_center_msg_pkg_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[ 94%] [32m[1mLinking C shared library rosidl_generator_py/center_msg_pkg/center_msg_pkg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[ 97%] [32m[1mLinking C shared library rosidl_generator_py/center_msg_pkg/center_msg_pkg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[100%] [32m[1mLinking C shared library rosidl_generator_py/center_msg_pkg/center_msg_pkg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[100%] Built target center_msg_pkg__rosidl_typesupport_introspection_c__pyext
+[100%] Built target center_msg_pkg__rosidl_typesupport_c__pyext
+[100%] Built target center_msg_pkg__rosidl_typesupport_fastrtps_c__pyext
+-- Install configuration: ""
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/ament_index/resource_index/rosidl_interfaces/center_msg_pkg
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/rosidl_generator_c__visibility_control.h
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/singlecenter.h
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/center.h
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/center__struct.h
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/center__type_support.h
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/singlecenter__functions.c
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/singlecenter__type_support.h
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/singlecenter__functions.h
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/center__functions.c
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/singlecenter__struct.h
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/center__functions.h
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/environment/library_path.sh
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/environment/library_path.dsv
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/lib/libcenter_msg_pkg__rosidl_generator_c.so
+-- Set non-toolchain portion of runtime path of "/home/zhongrui/code/ws/install/center_msg_pkg/lib/libcenter_msg_pkg__rosidl_generator_c.so" to ""
+-- Up-to-date: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg
+-- Up-to-date: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+-- Up-to-date: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/center__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/singlecenter__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/lib/libcenter_msg_pkg__rosidl_typesupport_fastrtps_c.so
+-- Set non-toolchain portion of runtime path of "/home/zhongrui/code/ws/install/center_msg_pkg/lib/libcenter_msg_pkg__rosidl_typesupport_fastrtps_c.so" to ""
+-- Up-to-date: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg
+-- Up-to-date: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/rosidl_typesupport_introspection_c__visibility_control.h
+-- Up-to-date: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/center__rosidl_typesupport_introspection_c.h
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/center__type_support.c
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/singlecenter__rosidl_typesupport_introspection_c.h
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/singlecenter__type_support.c
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/lib/libcenter_msg_pkg__rosidl_typesupport_introspection_c.so
+-- Set non-toolchain portion of runtime path of "/home/zhongrui/code/ws/install/center_msg_pkg/lib/libcenter_msg_pkg__rosidl_typesupport_introspection_c.so" to ""
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/lib/libcenter_msg_pkg__rosidl_typesupport_c.so
+-- Set non-toolchain portion of runtime path of "/home/zhongrui/code/ws/install/center_msg_pkg/lib/libcenter_msg_pkg__rosidl_typesupport_c.so" to ""
+-- Up-to-date: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg
+-- Up-to-date: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/singlecenter.hpp
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/rosidl_generator_cpp__visibility_control.hpp
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/center.hpp
+-- Up-to-date: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/singlecenter__traits.hpp
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/center__struct.hpp
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/singlecenter__type_support.hpp
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/singlecenter__struct.hpp
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/center__traits.hpp
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/center__builder.hpp
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/singlecenter__builder.hpp
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/center__type_support.hpp
+-- Up-to-date: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg
+-- Up-to-date: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+-- Up-to-date: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/center__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/singlecenter__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/dds_fastrtps
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/lib/libcenter_msg_pkg__rosidl_typesupport_fastrtps_cpp.so
+-- Set non-toolchain portion of runtime path of "/home/zhongrui/code/ws/install/center_msg_pkg/lib/libcenter_msg_pkg__rosidl_typesupport_fastrtps_cpp.so" to ""
+-- Up-to-date: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg
+-- Up-to-date: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg
+-- Up-to-date: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/singlecenter__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/center__type_support.cpp
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/singlecenter__type_support.cpp
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/center__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/lib/libcenter_msg_pkg__rosidl_typesupport_introspection_cpp.so
+-- Set non-toolchain portion of runtime path of "/home/zhongrui/code/ws/install/center_msg_pkg/lib/libcenter_msg_pkg__rosidl_typesupport_introspection_cpp.so" to ""
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/lib/libcenter_msg_pkg__rosidl_typesupport_cpp.so
+-- Set non-toolchain portion of runtime path of "/home/zhongrui/code/ws/install/center_msg_pkg/lib/libcenter_msg_pkg__rosidl_typesupport_cpp.so" to ""
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/environment/pythonpath.sh
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/environment/pythonpath.dsv
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg-0.0.0-py3.10.egg-info
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg-0.0.0-py3.10.egg-info/PKG-INFO
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg-0.0.0-py3.10.egg-info/dependency_links.txt
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg-0.0.0-py3.10.egg-info/SOURCES.txt
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg-0.0.0-py3.10.egg-info/top_level.txt
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg/_center_msg_pkg_s.ep.rosidl_typesupport_introspection_c.c
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg/_center_msg_pkg_s.ep.rosidl_typesupport_c.c
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg/msg
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg/msg/_singlecenter_s.c
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg/msg/_singlecenter.py
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg/msg/__init__.py
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg/msg/_center.py
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg/msg/_center_s.c
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg/center_msg_pkg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg/_center_msg_pkg_s.ep.rosidl_typesupport_fastrtps_c.c
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg/center_msg_pkg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg/__init__.py
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg/center_msg_pkg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg/libcenter_msg_pkg__rosidl_generator_py.so
+Listing '/home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg'...
+Compiling '/home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg/__init__.py'...
+Listing '/home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg/msg'...
+Compiling '/home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg/msg/__init__.py'...
+Compiling '/home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg/msg/_center.py'...
+Compiling '/home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg/msg/_singlecenter.py'...
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg/center_msg_pkg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+-- Set non-toolchain portion of runtime path of "/home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg/center_msg_pkg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg/center_msg_pkg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+-- Set non-toolchain portion of runtime path of "/home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg/center_msg_pkg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg/center_msg_pkg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+-- Set non-toolchain portion of runtime path of "/home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg/center_msg_pkg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/lib/libcenter_msg_pkg__rosidl_generator_py.so
+-- Set non-toolchain portion of runtime path of "/home/zhongrui/code/ws/install/center_msg_pkg/lib/libcenter_msg_pkg__rosidl_generator_py.so" to ""
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/msg/Center.idl
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/msg/Singlecenter.idl
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/msg/Center.msg
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/msg/Singlecenter.msg
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/ament_index/resource_index/package_run_dependencies/center_msg_pkg
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/ament_index/resource_index/parent_prefix_path/center_msg_pkg
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/environment/ament_prefix_path.sh
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/environment/ament_prefix_path.dsv
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/environment/path.sh
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/environment/path.dsv
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/local_setup.bash
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/local_setup.sh
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/local_setup.zsh
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/local_setup.dsv
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/package.dsv
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/ament_index/resource_index/packages/center_msg_pkg
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/cmake/export_center_msg_pkg__rosidl_generator_cExport.cmake
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/cmake/export_center_msg_pkg__rosidl_generator_cExport-noconfig.cmake
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/cmake/export_center_msg_pkg__rosidl_typesupport_fastrtps_cExport.cmake
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/cmake/export_center_msg_pkg__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/cmake/center_msg_pkg__rosidl_typesupport_introspection_cExport.cmake
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/cmake/center_msg_pkg__rosidl_typesupport_introspection_cExport-noconfig.cmake
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/cmake/center_msg_pkg__rosidl_typesupport_cExport.cmake
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/cmake/center_msg_pkg__rosidl_typesupport_cExport-noconfig.cmake
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/cmake/export_center_msg_pkg__rosidl_generator_cppExport.cmake
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/cmake/export_center_msg_pkg__rosidl_typesupport_fastrtps_cppExport.cmake
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/cmake/export_center_msg_pkg__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/cmake/center_msg_pkg__rosidl_typesupport_introspection_cppExport.cmake
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/cmake/center_msg_pkg__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/cmake/center_msg_pkg__rosidl_typesupport_cppExport.cmake
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/cmake/center_msg_pkg__rosidl_typesupport_cppExport-noconfig.cmake
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/cmake/export_center_msg_pkg__rosidl_generator_pyExport.cmake
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/cmake/export_center_msg_pkg__rosidl_generator_pyExport-noconfig.cmake
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/cmake/rosidl_cmake-extras.cmake
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/cmake/ament_cmake_export_targets-extras.cmake
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/cmake/center_msg_pkgConfig.cmake
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/cmake/center_msg_pkgConfig-version.cmake
+-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/package.xml

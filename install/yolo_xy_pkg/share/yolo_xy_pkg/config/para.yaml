@@ -3,3 +3,6 @@
     projectBasePath: "/home/zhongrui/code/ws/src/yolo_xy_pkg/"
     imgsz: 640
     runGPU: false
+    ConfidenceThreshold: 0.30
+    ScoreThreshold: 0.30
+    NMSThreshold: 0.40

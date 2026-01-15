@@ -10,6 +10,12 @@
 #include "inference.h"
 #include "std_msgs/msg/string.hpp"
 #include "sensor_msgs/msg/image.hpp"
+
+#include "center_msg_pkg/msg/center.hpp"
+
+#include <stdio.h>
+#include <time.h>
+
 using namespace std;
 using namespace cv;
 using namespace std::chrono_literals;
@@ -20,13 +26,19 @@ public:
     TargetxySubscriber() : Node("targetxysubscriber")
     {
         init();
-        command_subscribe_ = this->create_subscription<sensor_msgs::msg::Image>("image", 10, std::bind(&TargetxySubscriber::command_callback, this, std::placeholders::_1));
+
+        publisher_ = this->create_publisher<center_msg_pkg::msg::Center>("centerxy_topic", 10);
+
+        RCLCPP_INFO(this->get_logger(), "发布者节点已启动");
+
+        command_subscribe_ = this->create_subscription<sensor_msgs::msg::Image>("image", 0, std::bind(&TargetxySubscriber::command_callback, this, std::placeholders::_1));
         RCLCPP_INFO(this->get_logger(), "接收者节点已启动");
     }
 
 private:
     void command_callback(const sensor_msgs::msg::Image::SharedPtr msg)
     {
+        // time(1);
         cv::Mat frame;
         frame = processe_image(msg);
 
@@ -37,7 +49,7 @@ private:
         }
 
         std::vector<Detection> output = inf->runInference(frame);
-
+        // time(2);
         int detections = output.size();
         RCLCPP_INFO(this->get_logger(), "目标数: %d", detections);
         // 显示输出
@@ -46,6 +58,7 @@ private:
         float scale = 0.8;
         cv::resize(frame, frame, cv::Size(frame.cols * scale, frame.rows * scale));
         cv::imshow("Camera Detection", frame);
+        // time(3);
 
         if (cv::waitKey(1) == 'q')
         {
@@ -80,7 +93,36 @@ private:
         {
             RCLCPP_INFO(this->get_logger(), "暂无中心点");
         }
+
+        timer_callback(detections, centerX, centerY);
     }
+
+    void time(const int a)
+    {
+        clock_gettime(CLOCK_REALTIME, &ts);
+
+        time_t t = ts.tv_sec;
+        struct tm *tm = localtime(&t);
+
+        printf("%d当前时间： %04d-%02d-%02d %02d:%02d:%02d.%03ld\n", a, tm->tm_year + 1900, tm->tm_mon + 1, tm->tm_mday, tm->tm_hour, tm->tm_min, tm->tm_sec, ts.tv_nsec / 1000000);
+    }
+    void timer_callback(int boxnum, std::vector<float> centerX, std::vector<float> centerY)
+    {
+        if (boxnum)
+        {
+            center_msg_pkg::msg::Center message;
+            message.box_num = boxnum;
+            for (int i = 0; i < boxnum; i++)
+            {
+                center_msg_pkg::msg::Singlecenter point;
+                point.center_x = centerX[i];
+                point.center_y = centerY[i];
+                message.boxes.push_back(point);
+            }
+            publisher_->publish(message);
+        }
+    }
+
     cv::Mat processe_image(const sensor_msgs::msg::Image::SharedPtr &processed_image)
     {
         try
@@ -132,19 +174,42 @@ private:
         this->declare_parameter<bool>("runGPU", "false");
         bool runOnGPU = this->get_parameter("runGPU").as_bool();
 
+        this->declare_parameter<double>("ConfidenceThreshold", 0.6);
+        ConfidenceThreshold = this->get_parameter("ConfidenceThreshold").as_double();
+        this->declare_parameter<double>("ScoreThreshold", 0.6);
+        ScoreThreshold = this->get_parameter("ScoreThreshold").as_double();
+        this->declare_parameter<double>("NMSThreshold", 0.6);
+        NMSThreshold = this->get_parameter("NMSThreshold").as_double();
+
         inf = std::make_unique<Inference>(
             projectBasePath + "resource/best.onnx",
             cv::Size(imgsz, imgsz),
             projectBasePath + "resource/classes.txt",
-            runOnGPU);
+            runOnGPU,
+            ConfidenceThreshold,
+            ScoreThreshold,
+            NMSThreshold);
+
+        cv::Mat frame1;
+        frame1 = cv::imread(projectBasePath + "resource/1.jpg");
+
+        std::vector<Detection> output = inf->runInference(frame1);
 
         cv::namedWindow("Camera Detection", cv::WINDOW_NORMAL);
     }
 
     rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr command_subscribe_;
     std::string projectBasePath;
+    double ConfidenceThreshold;
+    double ScoreThreshold;
+    double NMSThreshold;
     std::unique_ptr<Inference> inf;
     int imgsz;
+
+    rclcpp::TimerBase::SharedPtr timer_;
+    rclcpp::Publisher<center_msg_pkg::msg::Center>::SharedPtr publisher_;
+
+    struct timespec ts;
 };
 int main(int argc, char *argv[])
 {

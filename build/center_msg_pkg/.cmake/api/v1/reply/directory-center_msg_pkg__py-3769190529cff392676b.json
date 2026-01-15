@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "center_msg_pkg__py",
+		"source" : "/home/zhongrui/code/ws/build/center_msg_pkg/center_msg_pkg__py"
+	}
+}

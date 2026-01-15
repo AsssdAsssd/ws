@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from center_msg_pkg/msg/Center.msg
+// generated code does not contain a copyright notice
+
+#include "center_msg_pkg/msg/Singlecenter.idl"
+
+module center_msg_pkg {
+  module msg {
+    struct Center {
+      sequence<center_msg_pkg::msg::Singlecenter> boxes;
+
+      uint32 box_num;
+    };
+  };
+};

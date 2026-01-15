@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-faaee29c21a695004076.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "center_msg_pkg__py",
+					"jsonFile" : "directory-center_msg_pkg__py-3769190529cff392676b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/zhongrui/code/ws/build/center_msg_pkg/center_msg_pkg__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "center_msg_pkg",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_center_msg_pkg_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_center_msg_pkg_egg-5df183415bc36ba29776.json",
+					"name" : "ament_cmake_python_build_center_msg_pkg_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_center_msg_pkg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_center_msg_pkg-0f73c28f2556e7b8d9fa.json",
+					"name" : "ament_cmake_python_copy_center_msg_pkg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "center_msg_pkg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-center_msg_pkg-37c483f72825ba451ae4.json",
+					"name" : "center_msg_pkg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "center_msg_pkg__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-center_msg_pkg__cpp-ad39e8d1cac271a46ed1.json",
+					"name" : "center_msg_pkg__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "center_msg_pkg__py::@06db654cedef9213b29d",
+					"jsonFile" : "target-center_msg_pkg__py-473710bf03ff60a6ab65.json",
+					"name" : "center_msg_pkg__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "center_msg_pkg__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-center_msg_pkg__rosidl_generator_c-15191a004690655e6251.json",
+					"name" : "center_msg_pkg__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "center_msg_pkg__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-center_msg_pkg__rosidl_generator_py-1cad7a5aab02801edc24.json",
+					"name" : "center_msg_pkg__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "center_msg_pkg__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-center_msg_pkg__rosidl_typesupport_c-415858c23b7f91efe1ef.json",
+					"name" : "center_msg_pkg__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "center_msg_pkg__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-center_msg_pkg__rosidl_typesupport_c__pyext-96198943e03e8e877171.json",
+					"name" : "center_msg_pkg__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "center_msg_pkg__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-center_msg_pkg__rosidl_typesupport_cpp-cae5e1e60caaf3863206.json",
+					"name" : "center_msg_pkg__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "center_msg_pkg__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-center_msg_pkg__rosidl_typesupport_fastrtps_c-388a702cc30fb9cd9275.json",
+					"name" : "center_msg_pkg__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "center_msg_pkg__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-center_msg_pkg__rosidl_typesupport_fastrtps_c__pyext-4f7aa0da86b80caf9708.json",
+					"name" : "center_msg_pkg__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "center_msg_pkg__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-center_msg_pkg__rosidl_typesupport_fastrtps_cpp-54bfa7adc4b5cb291cfc.json",
+					"name" : "center_msg_pkg__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "center_msg_pkg__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-center_msg_pkg__rosidl_typesupport_introspection_c-0a66c99236cd5c747968.json",
+					"name" : "center_msg_pkg__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "center_msg_pkg__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-center_msg_pkg__rosidl_typesupport_introspection_c__pyext-5ff600f35100bb47914c.json",
+					"name" : "center_msg_pkg__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "center_msg_pkg__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-center_msg_pkg__rosidl_typesupport_introspection_cpp-7239ef08f131f7305c76.json",
+					"name" : "center_msg_pkg__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "center_msg_pkg_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-center_msg_pkg_uninstall-7056cdb71d1568523cf4.json",
+					"name" : "center_msg_pkg_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-e7150d58f74489558134.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/zhongrui/code/ws/build/center_msg_pkg",
+		"source" : "/home/zhongrui/code/ws/src/center_msg_pkg"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 8
+	}
+}

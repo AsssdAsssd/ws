@@ -1,13 +1,21 @@
 #include "inference.h"
 
-Inference::Inference(const std::string &onnxModelPath, const cv::Size &modelInputShape, const std::string &classesTxtFile, const bool &runWithCuda)
+Inference::Inference(const std::string &onnxModelPath, const cv::Size &modelInputShape, const std::string &classesTxtFile, const bool &runWithCuda,const float &ConfidenceThreshold,const float &ScoreThreshold,const float &NMSThreshold)
 {
     modelPath = onnxModelPath;
     modelShape = modelInputShape;
     classesPath = classesTxtFile;
     cudaEnabled = runWithCuda;
+
+
+    modelConfidenceThreshold=ConfidenceThreshold;
+    modelScoreThreshold=ScoreThreshold;
+    modelNMSThreshold=NMSThreshold;
+    std::cout<<ConfidenceThreshold<<"  "<<ScoreThreshold<<"   "<<NMSThreshold;
     loadClassesFromFile();
     loadOnnxNetwork();
+
+
 }
 
 std::vector<Detection> Inference::runInference(const cv::Mat &input)

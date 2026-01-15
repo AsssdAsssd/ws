@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from center_msg_pkg/msg/Singlecenter.msg
+// generated code does not contain a copyright notice
+
+
+module center_msg_pkg {
+  module msg {
+    struct Singlecenter {
+      float center_x;
+
+      float center_y;
+    };
+  };
+};
