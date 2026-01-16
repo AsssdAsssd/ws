@@ -1,0 +1,675 @@
+[0.000000] (-) TimerEvent: {}
+[0.000159] (-) JobUnselected: {'identifier': 'test_pkg'}
+[0.000176] (center_msg_pkg) JobQueued: {'identifier': 'center_msg_pkg', 'dependencies': OrderedDict()}
+[0.000189] (yolo_xy_pkg) JobQueued: {'identifier': 'yolo_xy_pkg', 'dependencies': OrderedDict([('center_msg_pkg', '/home/zhongrui/code/ws/install/center_msg_pkg')])}
+[0.000205] (center_msg_pkg) JobStarted: {'identifier': 'center_msg_pkg'}
+[0.014809] (center_msg_pkg) JobProgress: {'identifier': 'center_msg_pkg', 'progress': 'cmake'}
+[0.015673] (center_msg_pkg) Command: {'cmd': ['/home/zhongrui/bin/cmake', '/home/zhongrui/code/ws/src/center_msg_pkg', '-DCMAKE_INSTALL_PREFIX=/home/zhongrui/code/ws/install/center_msg_pkg'], 'cwd': '/home/zhongrui/code/ws/build/center_msg_pkg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh:en_US:en'), ('USER', 'zhongrui'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('ALLUSERSPROFILE', '/opt/MVS/MVFG'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/local/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:'), ('HOME', '/home/zhongrui'), ('CHROME_DESKTOP', 'code.desktop'), ('CONDA_SHLVL', '0'), ('TERM_PROGRAM_VERSION', '1.104.0'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '3290'), ('SYSTEMD_EXEC_PID', '3479'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5047'), ('CPLUS_INCLUDE_PATH', '/usr/local/include/opencv4:'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'zhongrui'), ('JOURNAL_STREAM', '8:18703'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zhongrui'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('MVCAM_SDK_PATH', '/opt/MVS'), ('PATH', '/home/zhongrui/anaconda3/condabin:/opt/cmake/bin:/opt/ros/humble/bin:/home/zhongrui/.local/bin:/home/zhongrui/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mi:@/tmp/.ICE-unix/3440,unix/mi:/tmp/.ICE-unix/3440'), ('INVOCATION_ID', '10e058f6aeb348a496c9cee2021489e3'), ('MVCAM_GENICAM_CLPROTOCOL', '/opt/MVS/lib/CLProtocol'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('PYTHONSTARTUP', '/home/zhongrui/.config/Code/User/workspaceStorage/0258f086bab9b96ce2d0eca67837ab33/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1BQFJ3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-d75edd2444.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/zhongrui/anaconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/zhongrui/code/ws/build/center_msg_pkg'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/zhongrui/anaconda3/bin/conda'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('MVCAM_SDK_VERSION', ''), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('MVCAM_COMMON_RUNENV', '/opt/MVS/lib'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.024830] (center_msg_pkg) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):\n'}
+[0.025201] (center_msg_pkg) StderrLine: {'line': b'  Compatibility with CMake < 3.10 will be removed from a future version of\n'}
+[0.025259] (center_msg_pkg) StderrLine: {'line': b'  CMake.\n'}
+[0.025320] (center_msg_pkg) StderrLine: {'line': b'\n'}
+[0.025364] (center_msg_pkg) StderrLine: {'line': b'  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax\n'}
+[0.025405] (center_msg_pkg) StderrLine: {'line': b'  to tell CMake that the project requires at least <min> but has been updated\n'}
+[0.025445] (center_msg_pkg) StderrLine: {'line': b'  to work with policies introduced by <max> or earlier.\n'}
+[0.025484] (center_msg_pkg) StderrLine: {'line': b'\n'}
+[0.025520] (center_msg_pkg) StderrLine: {'line': b'\x1b[0m\n'}
+[0.099530] (-) TimerEvent: {}
+[0.193378] (center_msg_pkg) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.199557] (-) TimerEvent: {}
+[0.300410] (-) TimerEvent: {}
+[0.369875] (center_msg_pkg) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.386436] (center_msg_pkg) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.400609] (-) TimerEvent: {}
+[0.496716] (center_msg_pkg) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.500677] (-) TimerEvent: {}
+[0.512635] (center_msg_pkg) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.513227] (center_msg_pkg) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.513789] (center_msg_pkg) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.538477] (center_msg_pkg) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.600903] (-) TimerEvent: {}
+[0.646375] (center_msg_pkg) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.665142] (center_msg_pkg) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.665693] (center_msg_pkg) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.666356] (center_msg_pkg) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.683516] (center_msg_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.701060] (-) TimerEvent: {}
+[0.801557] (-) TimerEvent: {}
+[0.899907] (center_msg_pkg) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter\n'}
+[0.901628] (-) TimerEvent: {}
+[0.975301] (center_msg_pkg) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.978144] (center_msg_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.985380] (center_msg_pkg) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.001774] (-) TimerEvent: {}
+[1.027038] (center_msg_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.101881] (-) TimerEvent: {}
+[1.202152] (-) TimerEvent: {}
+[1.302492] (-) TimerEvent: {}
+[1.359586] (center_msg_pkg) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.402974] (-) TimerEvent: {}
+[1.504493] (-) TimerEvent: {}
+[1.605741] (-) TimerEvent: {}
+[1.707065] (-) TimerEvent: {}
+[1.809127] (-) TimerEvent: {}
+[1.910196] (-) TimerEvent: {}
+[2.011218] (-) TimerEvent: {}
+[2.112636] (-) TimerEvent: {}
+[2.214502] (-) TimerEvent: {}
+[2.314777] (-) TimerEvent: {}
+[2.414153] (center_msg_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.414888] (-) TimerEvent: {}
+[2.515136] (-) TimerEvent: {}
+[2.615484] (-) TimerEvent: {}
+[2.715796] (-) TimerEvent: {}
+[2.797887] (center_msg_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.801059] (center_msg_pkg) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:20 (find_package):\n'}
+[2.801210] (center_msg_pkg) StderrLine: {'line': b'  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules\n'}
+[2.801307] (center_msg_pkg) StderrLine: {'line': b'  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use\n'}
+[2.801392] (center_msg_pkg) StderrLine: {'line': b'  the cmake_policy command to set the policy and suppress this warning.\n'}
+[2.801452] (center_msg_pkg) StderrLine: {'line': b'\n'}
+[2.801506] (center_msg_pkg) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[2.801562] (center_msg_pkg) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)\n'}
+[2.801618] (center_msg_pkg) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)\n'}
+[2.801672] (center_msg_pkg) StderrLine: {'line': b'  CMakeLists.txt:13 (rosidl_generate_interfaces)\n'}
+[2.801725] (center_msg_pkg) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[2.801777] (center_msg_pkg) StderrLine: {'line': b'\x1b[0m\n'}
+[2.815911] (-) TimerEvent: {}
+[2.816715] (center_msg_pkg) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6")\n'}
+[2.818104] (center_msg_pkg) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[2.818596] (center_msg_pkg) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /opt/ros/humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:52 (find_package):\n'}
+[2.818660] (center_msg_pkg) StderrLine: {'line': b'  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules\n'}
+[2.818693] (center_msg_pkg) StderrLine: {'line': b'  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use\n'}
+[2.818721] (center_msg_pkg) StderrLine: {'line': b'  the cmake_policy command to set the policy and suppress this warning.\n'}
+[2.818745] (center_msg_pkg) StderrLine: {'line': b'\n'}
+[2.818768] (center_msg_pkg) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[2.818791] (center_msg_pkg) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)\n'}
+[2.818813] (center_msg_pkg) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)\n'}
+[2.818866] (center_msg_pkg) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)\n'}
+[2.818921] (center_msg_pkg) StderrLine: {'line': b'  CMakeLists.txt:13 (rosidl_generate_interfaces)\n'}
+[2.818987] (center_msg_pkg) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[2.819044] (center_msg_pkg) StderrLine: {'line': b'\x1b[0m\n'}
+[2.833289] (center_msg_pkg) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /opt/ros/humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:140 (find_package):\n'}
+[2.833500] (center_msg_pkg) StderrLine: {'line': b'  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules\n'}
+[2.833583] (center_msg_pkg) StderrLine: {'line': b'  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use\n'}
+[2.833648] (center_msg_pkg) StderrLine: {'line': b'  the cmake_policy command to set the policy and suppress this warning.\n'}
+[2.833708] (center_msg_pkg) StderrLine: {'line': b'\n'}
+[2.833765] (center_msg_pkg) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[2.833821] (center_msg_pkg) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)\n'}
+[2.833877] (center_msg_pkg) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)\n'}
+[2.833935] (center_msg_pkg) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)\n'}
+[2.834003] (center_msg_pkg) StderrLine: {'line': b'  CMakeLists.txt:13 (rosidl_generate_interfaces)\n'}
+[2.834062] (center_msg_pkg) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[2.834116] (center_msg_pkg) StderrLine: {'line': b'\x1b[0m\n'}
+[2.840102] (center_msg_pkg) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5")\n'}
+[2.840308] (center_msg_pkg) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.840437] (center_msg_pkg) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[2.840536] (center_msg_pkg) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[2.855808] (center_msg_pkg) StdoutLine: {'line': b'-- Found PythonExtra: .so\n'}
+[2.878789] (center_msg_pkg) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.897369] (center_msg_pkg) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.898261] (center_msg_pkg) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.900251] (center_msg_pkg) StdoutLine: {'line': b'-- Configuring done (2.9s)\n'}
+[2.915996] (-) TimerEvent: {}
+[2.923394] (center_msg_pkg) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[2.929390] (center_msg_pkg) StdoutLine: {'line': b'-- Build files have been written to: /home/zhongrui/code/ws/build/center_msg_pkg\n'}
+[2.935871] (center_msg_pkg) CommandEnded: {'returncode': 0}
+[2.936481] (center_msg_pkg) JobProgress: {'identifier': 'center_msg_pkg', 'progress': 'build'}
+[2.936976] (center_msg_pkg) Command: {'cmd': ['/home/zhongrui/bin/cmake', '--build', '/home/zhongrui/code/ws/build/center_msg_pkg', '--', '-j16', '-l16'], 'cwd': '/home/zhongrui/code/ws/build/center_msg_pkg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh:en_US:en'), ('USER', 'zhongrui'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('ALLUSERSPROFILE', '/opt/MVS/MVFG'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/local/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:'), ('HOME', '/home/zhongrui'), ('CHROME_DESKTOP', 'code.desktop'), ('CONDA_SHLVL', '0'), ('TERM_PROGRAM_VERSION', '1.104.0'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '3290'), ('SYSTEMD_EXEC_PID', '3479'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5047'), ('CPLUS_INCLUDE_PATH', '/usr/local/include/opencv4:'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'zhongrui'), ('JOURNAL_STREAM', '8:18703'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zhongrui'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('MVCAM_SDK_PATH', '/opt/MVS'), ('PATH', '/home/zhongrui/anaconda3/condabin:/opt/cmake/bin:/opt/ros/humble/bin:/home/zhongrui/.local/bin:/home/zhongrui/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mi:@/tmp/.ICE-unix/3440,unix/mi:/tmp/.ICE-unix/3440'), ('INVOCATION_ID', '10e058f6aeb348a496c9cee2021489e3'), ('MVCAM_GENICAM_CLPROTOCOL', '/opt/MVS/lib/CLProtocol'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('PYTHONSTARTUP', '/home/zhongrui/.config/Code/User/workspaceStorage/0258f086bab9b96ce2d0eca67837ab33/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1BQFJ3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-d75edd2444.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/zhongrui/anaconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/zhongrui/code/ws/build/center_msg_pkg'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/zhongrui/anaconda3/bin/conda'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('MVCAM_SDK_VERSION', ''), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('MVCAM_COMMON_RUNENV', '/opt/MVS/lib'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.954463] (center_msg_pkg) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[2.957685] (center_msg_pkg) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[2.960062] (center_msg_pkg) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_copy_center_msg_pkg\n'}
+[3.016122] (-) TimerEvent: {}
+[3.116469] (-) TimerEvent: {}
+[3.119789] (center_msg_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[3.120294] (center_msg_pkg) StdoutLine: {'line': b'creating center_msg_pkg.egg-info\n'}
+[3.120566] (center_msg_pkg) StdoutLine: {'line': b'writing center_msg_pkg.egg-info/PKG-INFO\n'}
+[3.120712] (center_msg_pkg) StdoutLine: {'line': b'writing dependency_links to center_msg_pkg.egg-info/dependency_links.txt\n'}
+[3.120786] (center_msg_pkg) StdoutLine: {'line': b'writing top-level names to center_msg_pkg.egg-info/top_level.txt\n'}
+[3.120965] (center_msg_pkg) StdoutLine: {'line': b"writing manifest file 'center_msg_pkg.egg-info/SOURCES.txt'\n"}
+[3.122864] (center_msg_pkg) StdoutLine: {'line': b"reading manifest file 'center_msg_pkg.egg-info/SOURCES.txt'\n"}
+[3.123159] (center_msg_pkg) StdoutLine: {'line': b"writing manifest file 'center_msg_pkg.egg-info/SOURCES.txt'\n"}
+[3.130393] (center_msg_pkg) StdoutLine: {'line': b'[  5%] Built target center_msg_pkg__cpp\n'}
+[3.132766] (center_msg_pkg) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/center_msg_pkg__rosidl_generator_c.dir/rosidl_generator_c/center_msg_pkg/msg/detail/center__functions.c.o\x1b[0m\n'}
+[3.132953] (center_msg_pkg) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/center_msg_pkg__rosidl_generator_c.dir/rosidl_generator_c/center_msg_pkg/msg/detail/singlecenter__functions.c.o\x1b[0m\n'}
+[3.133058] (center_msg_pkg) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.133884] (center_msg_pkg) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.134112] (center_msg_pkg) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[3.147053] (center_msg_pkg) StdoutLine: {'line': b'[ 17%] Built target ament_cmake_python_build_center_msg_pkg_egg\n'}
+[3.163378] (center_msg_pkg) StdoutLine: {'line': b'[ 20%] \x1b[32m\x1b[1mLinking C shared library libcenter_msg_pkg__rosidl_generator_c.so\x1b[0m\n'}
+[3.184986] (center_msg_pkg) StdoutLine: {'line': b'[ 20%] Built target center_msg_pkg__rosidl_generator_c\n'}
+[3.188471] (center_msg_pkg) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.188719] (center_msg_pkg) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.189316] (center_msg_pkg) StdoutLine: {'line': b'[ 28%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[3.216560] (-) TimerEvent: {}
+[3.277059] (center_msg_pkg) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/center_msg_pkg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/center_msg_pkg/msg/singlecenter__type_support.cpp.o\x1b[0m\n'}
+[3.277238] (center_msg_pkg) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/center_msg_pkg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/center_msg_pkg/msg/center__type_support.cpp.o\x1b[0m\n'}
+[3.288394] (center_msg_pkg) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/center_msg_pkg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/center_msg_pkg/msg/detail/center__type_support.cpp.o\x1b[0m\n'}
+[3.288792] (center_msg_pkg) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/center_msg_pkg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/center_msg_pkg/msg/detail/singlecenter__type_support.cpp.o\x1b[0m\n'}
+[3.297944] (center_msg_pkg) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/center_msg_pkg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/center_msg_pkg/msg/detail/dds_fastrtps/singlecenter__type_support.cpp.o\x1b[0m\n'}
+[3.298111] (center_msg_pkg) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/center_msg_pkg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/center_msg_pkg/msg/detail/dds_fastrtps/center__type_support.cpp.o\x1b[0m\n'}
+[3.316660] (-) TimerEvent: {}
+[3.351082] (center_msg_pkg) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/center_msg_pkg__rosidl_typesupport_c.dir/rosidl_typesupport_c/center_msg_pkg/msg/center__type_support.cpp.o\x1b[0m\n'}
+[3.351720] (center_msg_pkg) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/center_msg_pkg__rosidl_typesupport_c.dir/rosidl_typesupport_c/center_msg_pkg/msg/singlecenter__type_support.cpp.o\x1b[0m\n'}
+[3.356042] (center_msg_pkg) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding C object CMakeFiles/center_msg_pkg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/center_msg_pkg/msg/detail/center__type_support.c.o\x1b[0m\n'}
+[3.356276] (center_msg_pkg) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding C object CMakeFiles/center_msg_pkg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/center_msg_pkg/msg/detail/singlecenter__type_support.c.o\x1b[0m\n'}
+[3.371395] (center_msg_pkg) StdoutLine: {'line': b'[ 56%] \x1b[32m\x1b[1mLinking CXX shared library libcenter_msg_pkg__rosidl_typesupport_c.so\x1b[0m\n'}
+[3.372984] (center_msg_pkg) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/center_msg_pkg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/center_msg_pkg/msg/detail/center__type_support_c.cpp.o\x1b[0m\n'}
+[3.373586] (center_msg_pkg) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/center_msg_pkg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/center_msg_pkg/msg/detail/singlecenter__type_support_c.cpp.o\x1b[0m\n'}
+[3.385436] (center_msg_pkg) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking C shared library libcenter_msg_pkg__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[3.399420] (center_msg_pkg) StdoutLine: {'line': b'[ 64%] Built target center_msg_pkg__rosidl_typesupport_c\n'}
+[3.405166] (center_msg_pkg) StdoutLine: {'line': b'[ 64%] Built target center_msg_pkg__rosidl_typesupport_introspection_c\n'}
+[3.416780] (-) TimerEvent: {}
+[3.467465] (center_msg_pkg) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX shared library libcenter_msg_pkg__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[3.490433] (center_msg_pkg) StdoutLine: {'line': b'[ 66%] Built target center_msg_pkg__rosidl_typesupport_cpp\n'}
+[3.516891] (-) TimerEvent: {}
+[3.579528] (center_msg_pkg) StdoutLine: {'line': b'[ 69%] \x1b[32m\x1b[1mLinking CXX shared library libcenter_msg_pkg__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[3.610029] (center_msg_pkg) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX shared library libcenter_msg_pkg__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[3.615214] (center_msg_pkg) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libcenter_msg_pkg__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[3.616952] (-) TimerEvent: {}
+[3.631861] (center_msg_pkg) StdoutLine: {'line': b'[ 74%] Built target center_msg_pkg__rosidl_typesupport_introspection_cpp\n'}
+[3.665605] (center_msg_pkg) StdoutLine: {'line': b'[ 74%] Built target center_msg_pkg__rosidl_typesupport_fastrtps_cpp\n'}
+[3.665896] (center_msg_pkg) StdoutLine: {'line': b'[ 74%] Built target center_msg_pkg__rosidl_typesupport_fastrtps_c\n'}
+[3.674796] (center_msg_pkg) StdoutLine: {'line': b'[ 74%] Built target center_msg_pkg\n'}
+[3.682915] (center_msg_pkg) StdoutLine: {'line': b'[ 76%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[3.717071] (-) TimerEvent: {}
+[3.817374] (-) TimerEvent: {}
+[3.886474] (center_msg_pkg) StdoutLine: {'line': b'[ 76%] Built target center_msg_pkg__py\n'}
+[3.896003] (center_msg_pkg) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding C object CMakeFiles/center_msg_pkg__rosidl_generator_py.dir/rosidl_generator_py/center_msg_pkg/msg/_center_s.c.o\x1b[0m\n'}
+[3.896883] (center_msg_pkg) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/center_msg_pkg__rosidl_generator_py.dir/rosidl_generator_py/center_msg_pkg/msg/_singlecenter_s.c.o\x1b[0m\n'}
+[3.917500] (-) TimerEvent: {}
+[3.968150] (center_msg_pkg) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/center_msg_pkg/libcenter_msg_pkg__rosidl_generator_py.so\x1b[0m\n'}
+[3.991220] (center_msg_pkg) StdoutLine: {'line': b'[ 84%] Built target center_msg_pkg__rosidl_generator_py\n'}
+[3.999001] (center_msg_pkg) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/center_msg_pkg__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/center_msg_pkg/_center_msg_pkg_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[3.999292] (center_msg_pkg) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/center_msg_pkg__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/center_msg_pkg/_center_msg_pkg_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[4.000208] (center_msg_pkg) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/center_msg_pkg__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/center_msg_pkg/_center_msg_pkg_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[4.017631] (-) TimerEvent: {}
+[4.057191] (center_msg_pkg) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/center_msg_pkg/center_msg_pkg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.058211] (center_msg_pkg) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/center_msg_pkg/center_msg_pkg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.058925] (center_msg_pkg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/center_msg_pkg/center_msg_pkg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.073081] (center_msg_pkg) StdoutLine: {'line': b'[100%] Built target center_msg_pkg__rosidl_typesupport_introspection_c__pyext\n'}
+[4.073314] (center_msg_pkg) StdoutLine: {'line': b'[100%] Built target center_msg_pkg__rosidl_typesupport_c__pyext\n'}
+[4.074067] (center_msg_pkg) StdoutLine: {'line': b'[100%] Built target center_msg_pkg__rosidl_typesupport_fastrtps_c__pyext\n'}
+[4.079486] (center_msg_pkg) CommandEnded: {'returncode': 0}
+[4.080188] (center_msg_pkg) JobProgress: {'identifier': 'center_msg_pkg', 'progress': 'install'}
+[4.083619] (center_msg_pkg) Command: {'cmd': ['/home/zhongrui/bin/cmake', '--install', '/home/zhongrui/code/ws/build/center_msg_pkg'], 'cwd': '/home/zhongrui/code/ws/build/center_msg_pkg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh:en_US:en'), ('USER', 'zhongrui'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('ALLUSERSPROFILE', '/opt/MVS/MVFG'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/local/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:'), ('HOME', '/home/zhongrui'), ('CHROME_DESKTOP', 'code.desktop'), ('CONDA_SHLVL', '0'), ('TERM_PROGRAM_VERSION', '1.104.0'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '3290'), ('SYSTEMD_EXEC_PID', '3479'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5047'), ('CPLUS_INCLUDE_PATH', '/usr/local/include/opencv4:'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'zhongrui'), ('JOURNAL_STREAM', '8:18703'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zhongrui'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('MVCAM_SDK_PATH', '/opt/MVS'), ('PATH', '/home/zhongrui/anaconda3/condabin:/opt/cmake/bin:/opt/ros/humble/bin:/home/zhongrui/.local/bin:/home/zhongrui/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mi:@/tmp/.ICE-unix/3440,unix/mi:/tmp/.ICE-unix/3440'), ('INVOCATION_ID', '10e058f6aeb348a496c9cee2021489e3'), ('MVCAM_GENICAM_CLPROTOCOL', '/opt/MVS/lib/CLProtocol'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('PYTHONSTARTUP', '/home/zhongrui/.config/Code/User/workspaceStorage/0258f086bab9b96ce2d0eca67837ab33/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1BQFJ3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-d75edd2444.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/zhongrui/anaconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/zhongrui/code/ws/build/center_msg_pkg'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/zhongrui/anaconda3/bin/conda'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('MVCAM_SDK_VERSION', ''), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('MVCAM_COMMON_RUNENV', '/opt/MVS/lib'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[4.086265] (center_msg_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.086417] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/ament_index/resource_index/rosidl_interfaces/center_msg_pkg\n'}
+[4.086538] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg\n'}
+[4.086624] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg\n'}
+[4.086714] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/rosidl_generator_c__visibility_control.h\n'}
+[4.086782] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/singlecenter.h\n'}
+[4.086861] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/center.h\n'}
+[4.086949] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail\n'}
+[4.087027] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/center__struct.h\n'}
+[4.087082] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/center__type_support.h\n'}
+[4.087154] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/singlecenter__functions.c\n'}
+[4.087242] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/singlecenter__type_support.h\n'}
+[4.087303] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/singlecenter__functions.h\n'}
+[4.087351] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/center__functions.c\n'}
+[4.087418] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/singlecenter__struct.h\n'}
+[4.087491] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/center__functions.h\n'}
+[4.087629] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/environment/library_path.sh\n'}
+[4.087720] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/environment/library_path.dsv\n'}
+[4.087848] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/lib/libcenter_msg_pkg__rosidl_generator_c.so\n'}
+[4.088080] (center_msg_pkg) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/zhongrui/code/ws/install/center_msg_pkg/lib/libcenter_msg_pkg__rosidl_generator_c.so" to ""\n'}
+[4.088116] (center_msg_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg\n'}
+[4.088152] (center_msg_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg\n'}
+[4.088191] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[4.088243] (center_msg_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail\n'}
+[4.088280] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/center__rosidl_typesupport_fastrtps_c.h\n'}
+[4.088379] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/singlecenter__rosidl_typesupport_fastrtps_c.h\n'}
+[4.088470] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/lib/libcenter_msg_pkg__rosidl_typesupport_fastrtps_c.so\n'}
+[4.088698] (center_msg_pkg) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/zhongrui/code/ws/install/center_msg_pkg/lib/libcenter_msg_pkg__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[4.088728] (center_msg_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg\n'}
+[4.088765] (center_msg_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg\n'}
+[4.088801] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[4.088862] (center_msg_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail\n'}
+[4.088897] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/center__rosidl_typesupport_introspection_c.h\n'}
+[4.088968] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/center__type_support.c\n'}
+[4.089047] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/singlecenter__rosidl_typesupport_introspection_c.h\n'}
+[4.089122] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/singlecenter__type_support.c\n'}
+[4.089218] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/lib/libcenter_msg_pkg__rosidl_typesupport_introspection_c.so\n'}
+[4.089472] (center_msg_pkg) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/zhongrui/code/ws/install/center_msg_pkg/lib/libcenter_msg_pkg__rosidl_typesupport_introspection_c.so" to ""\n'}
+[4.089602] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/lib/libcenter_msg_pkg__rosidl_typesupport_c.so\n'}
+[4.089704] (center_msg_pkg) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/zhongrui/code/ws/install/center_msg_pkg/lib/libcenter_msg_pkg__rosidl_typesupport_c.so" to ""\n'}
+[4.089741] (center_msg_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg\n'}
+[4.089791] (center_msg_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg\n'}
+[4.089817] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/singlecenter.hpp\n'}
+[4.089854] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[4.089920] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/center.hpp\n'}
+[4.089992] (center_msg_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail\n'}
+[4.090030] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/singlecenter__traits.hpp\n'}
+[4.090101] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/center__struct.hpp\n'}
+[4.090178] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/singlecenter__type_support.hpp\n'}
+[4.090255] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/singlecenter__struct.hpp\n'}
+[4.090344] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/center__traits.hpp\n'}
+[4.090420] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/center__builder.hpp\n'}
+[4.090498] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/singlecenter__builder.hpp\n'}
+[4.090576] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/center__type_support.hpp\n'}
+[4.090662] (center_msg_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg\n'}
+[4.090699] (center_msg_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg\n'}
+[4.090737] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[4.090790] (center_msg_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail\n'}
+[4.090823] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/center__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.090916] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/singlecenter__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.091019] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/dds_fastrtps\n'}
+[4.091110] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/lib/libcenter_msg_pkg__rosidl_typesupport_fastrtps_cpp.so\n'}
+[4.091437] (center_msg_pkg) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/zhongrui/code/ws/install/center_msg_pkg/lib/libcenter_msg_pkg__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[4.091495] (center_msg_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg\n'}
+[4.091559] (center_msg_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg\n'}
+[4.091588] (center_msg_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail\n'}
+[4.091622] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/singlecenter__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.091646] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/center__type_support.cpp\n'}
+[4.091714] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/singlecenter__type_support.cpp\n'}
+[4.091810] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/include/center_msg_pkg/center_msg_pkg/msg/detail/center__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.091916] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/lib/libcenter_msg_pkg__rosidl_typesupport_introspection_cpp.so\n'}
+[4.092191] (center_msg_pkg) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/zhongrui/code/ws/install/center_msg_pkg/lib/libcenter_msg_pkg__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[4.092243] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/lib/libcenter_msg_pkg__rosidl_typesupport_cpp.so\n'}
+[4.092482] (center_msg_pkg) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/zhongrui/code/ws/install/center_msg_pkg/lib/libcenter_msg_pkg__rosidl_typesupport_cpp.so" to ""\n'}
+[4.092537] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/environment/pythonpath.sh\n'}
+[4.092608] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/environment/pythonpath.dsv\n'}
+[4.092693] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg-0.0.0-py3.10.egg-info\n'}
+[4.092832] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[4.092914] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[4.092991] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[4.093067] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[4.093153] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg\n'}
+[4.093217] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg/_center_msg_pkg_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[4.093432] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg/_center_msg_pkg_s.ep.rosidl_typesupport_c.c\n'}
+[4.093647] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg/msg\n'}
+[4.093688] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg/msg/_singlecenter_s.c\n'}
+[4.093789] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg/msg/_singlecenter.py\n'}
+[4.093849] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg/msg/__init__.py\n'}
+[4.093915] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg/msg/_center.py\n'}
+[4.093976] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg/msg/_center_s.c\n'}
+[4.094003] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg/center_msg_pkg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.094082] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg/_center_msg_pkg_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[4.094175] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg/center_msg_pkg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.094290] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg/__init__.py\n'}
+[4.094356] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg/center_msg_pkg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.094414] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg/libcenter_msg_pkg__rosidl_generator_py.so\n'}
+[4.115546] (center_msg_pkg) StdoutLine: {'line': b"Listing '/home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg'...\n"}
+[4.115761] (center_msg_pkg) StdoutLine: {'line': b"Compiling '/home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg/__init__.py'...\n"}
+[4.115841] (center_msg_pkg) StdoutLine: {'line': b"Listing '/home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg/msg'...\n"}
+[4.115906] (center_msg_pkg) StdoutLine: {'line': b"Compiling '/home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg/msg/__init__.py'...\n"}
+[4.115973] (center_msg_pkg) StdoutLine: {'line': b"Compiling '/home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg/msg/_center.py'...\n"}
+[4.116029] (center_msg_pkg) StdoutLine: {'line': b"Compiling '/home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg/msg/_singlecenter.py'...\n"}
+[4.117701] (-) TimerEvent: {}
+[4.119039] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg/center_msg_pkg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.119544] (center_msg_pkg) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg/center_msg_pkg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[4.119694] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg/center_msg_pkg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.119838] (center_msg_pkg) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg/center_msg_pkg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[4.119960] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg/center_msg_pkg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.120159] (center_msg_pkg) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages/center_msg_pkg/center_msg_pkg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[4.120228] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/lib/libcenter_msg_pkg__rosidl_generator_py.so\n'}
+[4.120440] (center_msg_pkg) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/zhongrui/code/ws/install/center_msg_pkg/lib/libcenter_msg_pkg__rosidl_generator_py.so" to ""\n'}
+[4.120521] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/msg/Center.idl\n'}
+[4.120572] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/msg/Singlecenter.idl\n'}
+[4.120656] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/msg/Center.msg\n'}
+[4.120731] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/msg/Singlecenter.msg\n'}
+[4.120850] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/ament_index/resource_index/package_run_dependencies/center_msg_pkg\n'}
+[4.120976] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/ament_index/resource_index/parent_prefix_path/center_msg_pkg\n'}
+[4.121067] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/environment/ament_prefix_path.sh\n'}
+[4.121155] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/environment/ament_prefix_path.dsv\n'}
+[4.121239] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/environment/path.sh\n'}
+[4.121329] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/environment/path.dsv\n'}
+[4.121418] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/local_setup.bash\n'}
+[4.121500] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/local_setup.sh\n'}
+[4.121589] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/local_setup.zsh\n'}
+[4.121670] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/local_setup.dsv\n'}
+[4.121754] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/package.dsv\n'}
+[4.121870] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/ament_index/resource_index/packages/center_msg_pkg\n'}
+[4.121989] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/cmake/export_center_msg_pkg__rosidl_generator_cExport.cmake\n'}
+[4.122085] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/cmake/export_center_msg_pkg__rosidl_generator_cExport-noconfig.cmake\n'}
+[4.122178] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/cmake/export_center_msg_pkg__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[4.122280] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/cmake/export_center_msg_pkg__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[4.122393] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/cmake/center_msg_pkg__rosidl_typesupport_introspection_cExport.cmake\n'}
+[4.122482] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/cmake/center_msg_pkg__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[4.122574] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/cmake/center_msg_pkg__rosidl_typesupport_cExport.cmake\n'}
+[4.122661] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/cmake/center_msg_pkg__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[4.122752] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/cmake/export_center_msg_pkg__rosidl_generator_cppExport.cmake\n'}
+[4.122849] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/cmake/export_center_msg_pkg__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[4.122938] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/cmake/export_center_msg_pkg__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[4.123032] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/cmake/center_msg_pkg__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[4.123124] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/cmake/center_msg_pkg__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[4.123215] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/cmake/center_msg_pkg__rosidl_typesupport_cppExport.cmake\n'}
+[4.123321] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/cmake/center_msg_pkg__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[4.123493] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/cmake/export_center_msg_pkg__rosidl_generator_pyExport.cmake\n'}
+[4.123668] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/cmake/export_center_msg_pkg__rosidl_generator_pyExport-noconfig.cmake\n'}
+[4.123757] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/cmake/rosidl_cmake-extras.cmake\n'}
+[4.123860] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[4.123927] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[4.124027] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[4.124090] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[4.124187] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[4.124246] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[4.124346] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/cmake/center_msg_pkgConfig.cmake\n'}
+[4.124409] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/cmake/center_msg_pkgConfig-version.cmake\n'}
+[4.124489] (center_msg_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/package.xml\n'}
+[4.126866] (center_msg_pkg) CommandEnded: {'returncode': 0}
+[4.139367] (center_msg_pkg) JobEnded: {'identifier': 'center_msg_pkg', 'rc': 0}
+[4.140556] (yolo_xy_pkg) JobStarted: {'identifier': 'yolo_xy_pkg'}
+[4.146482] (yolo_xy_pkg) JobProgress: {'identifier': 'yolo_xy_pkg', 'progress': 'cmake'}
+[4.147789] (yolo_xy_pkg) Command: {'cmd': ['/home/zhongrui/bin/cmake', '/home/zhongrui/code/ws/src/yolo_xy_pkg', '-DCMAKE_INSTALL_PREFIX=/home/zhongrui/code/ws/install/yolo_xy_pkg'], 'cwd': '/home/zhongrui/code/ws/build/yolo_xy_pkg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh:en_US:en'), ('USER', 'zhongrui'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('ALLUSERSPROFILE', '/opt/MVS/MVFG'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/zhongrui/code/ws/install/center_msg_pkg/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/local/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32'), ('HOME', '/home/zhongrui'), ('CHROME_DESKTOP', 'code.desktop'), ('CONDA_SHLVL', '0'), ('TERM_PROGRAM_VERSION', '1.104.0'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '3290'), ('SYSTEMD_EXEC_PID', '3479'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5047'), ('CPLUS_INCLUDE_PATH', '/usr/local/include/opencv4:'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'zhongrui'), ('JOURNAL_STREAM', '8:18703'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zhongrui'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('MVCAM_SDK_PATH', '/opt/MVS'), ('PATH', '/home/zhongrui/anaconda3/condabin:/opt/cmake/bin:/opt/ros/humble/bin:/home/zhongrui/.local/bin:/home/zhongrui/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mi:@/tmp/.ICE-unix/3440,unix/mi:/tmp/.ICE-unix/3440'), ('INVOCATION_ID', '10e058f6aeb348a496c9cee2021489e3'), ('MVCAM_GENICAM_CLPROTOCOL', '/opt/MVS/lib/CLProtocol'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('PYTHONSTARTUP', '/home/zhongrui/.config/Code/User/workspaceStorage/0258f086bab9b96ce2d0eca67837ab33/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1BQFJ3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-d75edd2444.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/zhongrui/code/ws/install/center_msg_pkg:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/zhongrui/anaconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/zhongrui/code/ws/build/yolo_xy_pkg'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/zhongrui/anaconda3/bin/conda'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('MVCAM_SDK_VERSION', ''), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('MVCAM_COMMON_RUNENV', '/opt/MVS/lib'), ('CMAKE_PREFIX_PATH', '/home/zhongrui/code/ws/install/center_msg_pkg:/opt/ros/humble')]), 'shell': False}
+[4.152343] (yolo_xy_pkg) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):\n'}
+[4.152563] (yolo_xy_pkg) StderrLine: {'line': b'  Compatibility with CMake < 3.10 will be removed from a future version of\n'}
+[4.152614] (yolo_xy_pkg) StderrLine: {'line': b'  CMake.\n'}
+[4.152653] (yolo_xy_pkg) StderrLine: {'line': b'\n'}
+[4.152689] (yolo_xy_pkg) StderrLine: {'line': b'  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax\n'}
+[4.152724] (yolo_xy_pkg) StderrLine: {'line': b'  to tell CMake that the project requires at least <min> but has been updated\n'}
+[4.152759] (yolo_xy_pkg) StderrLine: {'line': b'  to work with policies introduced by <max> or earlier.\n'}
+[4.152794] (yolo_xy_pkg) StderrLine: {'line': b'\n'}
+[4.152829] (yolo_xy_pkg) StderrLine: {'line': b'\x1b[0m\n'}
+[4.188179] (yolo_xy_pkg) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[4.217854] (-) TimerEvent: {}
+[4.242926] (yolo_xy_pkg) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[4.248421] (yolo_xy_pkg) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[4.295866] (yolo_xy_pkg) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[4.307124] (yolo_xy_pkg) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[4.307532] (yolo_xy_pkg) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[4.307710] (yolo_xy_pkg) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[4.317966] (-) TimerEvent: {}
+[4.319781] (yolo_xy_pkg) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[4.378710] (yolo_xy_pkg) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[4.391981] (yolo_xy_pkg) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[4.392304] (yolo_xy_pkg) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[4.392713] (yolo_xy_pkg) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[4.401357] (yolo_xy_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[4.418104] (-) TimerEvent: {}
+[4.499147] (yolo_xy_pkg) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter\n'}
+[4.518227] (-) TimerEvent: {}
+[4.566323] (yolo_xy_pkg) StdoutLine: {'line': b'-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[4.602313] (yolo_xy_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[4.605917] (yolo_xy_pkg) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[4.612075] (yolo_xy_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[4.618324] (-) TimerEvent: {}
+[4.620767] (yolo_xy_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.632847] (yolo_xy_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.677349] (yolo_xy_pkg) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[4.679629] (yolo_xy_pkg) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[4.718447] (-) TimerEvent: {}
+[4.762762] (yolo_xy_pkg) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")\n'}
+[4.788475] (yolo_xy_pkg) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include\n'}
+[4.818580] (-) TimerEvent: {}
+[4.829812] (yolo_xy_pkg) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[4.839592] (yolo_xy_pkg) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[4.891790] (yolo_xy_pkg) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[4.892862] (yolo_xy_pkg) StdoutLine: {'line': b'-- Found Threads: TRUE\n'}
+[4.918707] (-) TimerEvent: {}
+[4.957554] (yolo_xy_pkg) StdoutLine: {'line': b'-- Found OpenCV: /usr/local (found version "4.9.0")\n'}
+[4.959550] (yolo_xy_pkg) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[4.996134] (yolo_xy_pkg) StdoutLine: {'line': b'-- Found center_msg_pkg: 0.0.0 (/home/zhongrui/code/ws/install/center_msg_pkg/share/center_msg_pkg/cmake)\n'}
+[5.005371] (yolo_xy_pkg) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[5.018837] (-) TimerEvent: {}
+[5.061940] (yolo_xy_pkg) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[5.062108] (yolo_xy_pkg) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/zhongrui/code/ws/src/yolo_xy_pkg/include\n'}
+[5.062143] (yolo_xy_pkg) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[5.062982] (yolo_xy_pkg) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[5.064225] (yolo_xy_pkg) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[5.064269] (yolo_xy_pkg) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[5.064614] (yolo_xy_pkg) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[5.065360] (yolo_xy_pkg) StdoutLine: {'line': b'-- Configuring done (0.9s)\n'}
+[5.077640] (yolo_xy_pkg) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[5.079628] (yolo_xy_pkg) StdoutLine: {'line': b'-- Build files have been written to: /home/zhongrui/code/ws/build/yolo_xy_pkg\n'}
+[5.090669] (yolo_xy_pkg) CommandEnded: {'returncode': 0}
+[5.091435] (yolo_xy_pkg) JobProgress: {'identifier': 'yolo_xy_pkg', 'progress': 'build'}
+[5.092380] (yolo_xy_pkg) Command: {'cmd': ['/home/zhongrui/bin/cmake', '--build', '/home/zhongrui/code/ws/build/yolo_xy_pkg', '--', '-j16', '-l16'], 'cwd': '/home/zhongrui/code/ws/build/yolo_xy_pkg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh:en_US:en'), ('USER', 'zhongrui'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('ALLUSERSPROFILE', '/opt/MVS/MVFG'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/zhongrui/code/ws/install/center_msg_pkg/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/local/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32'), ('HOME', '/home/zhongrui'), ('CHROME_DESKTOP', 'code.desktop'), ('CONDA_SHLVL', '0'), ('TERM_PROGRAM_VERSION', '1.104.0'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '3290'), ('SYSTEMD_EXEC_PID', '3479'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5047'), ('CPLUS_INCLUDE_PATH', '/usr/local/include/opencv4:'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'zhongrui'), ('JOURNAL_STREAM', '8:18703'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zhongrui'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('MVCAM_SDK_PATH', '/opt/MVS'), ('PATH', '/home/zhongrui/anaconda3/condabin:/opt/cmake/bin:/opt/ros/humble/bin:/home/zhongrui/.local/bin:/home/zhongrui/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mi:@/tmp/.ICE-unix/3440,unix/mi:/tmp/.ICE-unix/3440'), ('INVOCATION_ID', '10e058f6aeb348a496c9cee2021489e3'), ('MVCAM_GENICAM_CLPROTOCOL', '/opt/MVS/lib/CLProtocol'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('PYTHONSTARTUP', '/home/zhongrui/.config/Code/User/workspaceStorage/0258f086bab9b96ce2d0eca67837ab33/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1BQFJ3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-d75edd2444.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/zhongrui/code/ws/install/center_msg_pkg:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/zhongrui/anaconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/zhongrui/code/ws/build/yolo_xy_pkg'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/zhongrui/anaconda3/bin/conda'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('MVCAM_SDK_VERSION', ''), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('MVCAM_COMMON_RUNENV', '/opt/MVS/lib'), ('CMAKE_PREFIX_PATH', '/home/zhongrui/code/ws/install/center_msg_pkg:/opt/ros/humble')]), 'shell': False}
+[5.115035] (yolo_xy_pkg) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/yolo_xy_node.dir/src/main.cpp.o\x1b[0m\n'}
+[5.115353] (yolo_xy_pkg) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/yolo_xy_node.dir/src/inference.cpp.o\x1b[0m\n'}
+[5.118909] (-) TimerEvent: {}
+[5.219395] (-) TimerEvent: {}
+[5.320551] (-) TimerEvent: {}
+[5.421608] (-) TimerEvent: {}
+[5.524032] (-) TimerEvent: {}
+[5.626732] (-) TimerEvent: {}
+[5.728781] (-) TimerEvent: {}
+[5.831976] (-) TimerEvent: {}
+[5.933545] (-) TimerEvent: {}
+[6.034889] (-) TimerEvent: {}
+[6.135819] (-) TimerEvent: {}
+[6.237090] (-) TimerEvent: {}
+[6.338338] (-) TimerEvent: {}
+[6.440144] (-) TimerEvent: {}
+[6.542473] (-) TimerEvent: {}
+[6.644056] (-) TimerEvent: {}
+[6.746627] (-) TimerEvent: {}
+[6.847675] (-) TimerEvent: {}
+[6.948883] (-) TimerEvent: {}
+[7.049774] (-) TimerEvent: {}
+[7.150174] (-) TimerEvent: {}
+[7.250678] (-) TimerEvent: {}
+[7.351043] (-) TimerEvent: {}
+[7.451525] (-) TimerEvent: {}
+[7.551955] (-) TimerEvent: {}
+[7.652632] (-) TimerEvent: {}
+[7.753139] (-) TimerEvent: {}
+[7.853583] (-) TimerEvent: {}
+[7.953942] (-) TimerEvent: {}
+[8.054351] (-) TimerEvent: {}
+[8.154894] (-) TimerEvent: {}
+[8.255992] (-) TimerEvent: {}
+[8.358225] (-) TimerEvent: {}
+[8.462033] (-) TimerEvent: {}
+[8.565463] (-) TimerEvent: {}
+[8.667085] (-) TimerEvent: {}
+[8.768272] (-) TimerEvent: {}
+[8.869502] (-) TimerEvent: {}
+[8.970354] (-) TimerEvent: {}
+[9.070874] (-) TimerEvent: {}
+[9.172993] (-) TimerEvent: {}
+[9.274265] (-) TimerEvent: {}
+[9.376156] (-) TimerEvent: {}
+[9.479789] (-) TimerEvent: {}
+[9.581361] (-) TimerEvent: {}
+[9.682298] (-) TimerEvent: {}
+[9.782908] (-) TimerEvent: {}
+[9.883624] (-) TimerEvent: {}
+[9.984206] (-) TimerEvent: {}
+[10.084756] (-) TimerEvent: {}
+[10.185132] (-) TimerEvent: {}
+[10.285382] (-) TimerEvent: {}
+[10.385714] (-) TimerEvent: {}
+[10.486053] (-) TimerEvent: {}
+[10.586384] (-) TimerEvent: {}
+[10.686778] (-) TimerEvent: {}
+[10.787297] (-) TimerEvent: {}
+[10.887784] (-) TimerEvent: {}
+[10.988258] (-) TimerEvent: {}
+[11.088975] (-) TimerEvent: {}
+[11.190537] (-) TimerEvent: {}
+[11.292940] (-) TimerEvent: {}
+[11.395996] (-) TimerEvent: {}
+[11.498510] (-) TimerEvent: {}
+[11.599933] (-) TimerEvent: {}
+[11.701150] (-) TimerEvent: {}
+[11.802505] (-) TimerEvent: {}
+[11.903601] (-) TimerEvent: {}
+[12.004118] (-) TimerEvent: {}
+[12.104655] (-) TimerEvent: {}
+[12.205933] (-) TimerEvent: {}
+[12.306361] (-) TimerEvent: {}
+[12.406797] (-) TimerEvent: {}
+[12.508466] (-) TimerEvent: {}
+[12.609727] (-) TimerEvent: {}
+[14.166897] (-) TimerEvent: {}
+[14.268470] (-) TimerEvent: {}
+[14.370176] (-) TimerEvent: {}
+[14.471513] (-) TimerEvent: {}
+[14.572906] (-) TimerEvent: {}
+[14.675880] (-) TimerEvent: {}
+[14.780047] (-) TimerEvent: {}
+[14.880894] (-) TimerEvent: {}
+[14.981869] (-) TimerEvent: {}
+[15.083023] (-) TimerEvent: {}
+[15.184879] (-) TimerEvent: {}
+[15.286481] (-) TimerEvent: {}
+[15.387737] (-) TimerEvent: {}
+[15.489095] (-) TimerEvent: {}
+[15.590986] (-) TimerEvent: {}
+[15.693775] (-) TimerEvent: {}
+[15.796243] (-) TimerEvent: {}
+[15.896596] (-) TimerEvent: {}
+[15.996941] (-) TimerEvent: {}
+[16.097268] (-) TimerEvent: {}
+[16.197608] (-) TimerEvent: {}
+[16.297979] (-) TimerEvent: {}
+[16.398350] (-) TimerEvent: {}
+[16.498704] (-) TimerEvent: {}
+[16.599061] (-) TimerEvent: {}
+[16.699428] (-) TimerEvent: {}
+[16.799773] (-) TimerEvent: {}
+[16.900114] (-) TimerEvent: {}
+[17.000474] (-) TimerEvent: {}
+[17.100826] (-) TimerEvent: {}
+[17.201183] (-) TimerEvent: {}
+[17.301555] (-) TimerEvent: {}
+[17.401891] (-) TimerEvent: {}
+[17.502235] (-) TimerEvent: {}
+[17.602588] (-) TimerEvent: {}
+[17.702932] (-) TimerEvent: {}
+[17.803483] (-) TimerEvent: {}
+[17.904773] (-) TimerEvent: {}
+[18.007153] (-) TimerEvent: {}
+[18.108256] (-) TimerEvent: {}
+[18.209540] (-) TimerEvent: {}
+[18.311228] (-) TimerEvent: {}
+[18.412886] (-) TimerEvent: {}
+[18.514593] (-) TimerEvent: {}
+[18.616244] (-) TimerEvent: {}
+[18.717795] (-) TimerEvent: {}
+[18.818393] (-) TimerEvent: {}
+[18.919720] (-) TimerEvent: {}
+[19.020988] (-) TimerEvent: {}
+[19.122089] (-) TimerEvent: {}
+[19.224008] (-) TimerEvent: {}
+[19.327134] (-) TimerEvent: {}
+[19.430690] (-) TimerEvent: {}
+[19.532541] (-) TimerEvent: {}
+[19.633979] (-) TimerEvent: {}
+[19.734505] (-) TimerEvent: {}
+[19.834847] (-) TimerEvent: {}
+[19.935194] (-) TimerEvent: {}
+[20.035557] (-) TimerEvent: {}
+[20.135912] (-) TimerEvent: {}
+[20.236259] (-) TimerEvent: {}
+[20.336618] (-) TimerEvent: {}
+[20.436965] (-) TimerEvent: {}
+[20.537325] (-) TimerEvent: {}
+[20.637649] (-) TimerEvent: {}
+[20.737980] (-) TimerEvent: {}
+[20.838350] (-) TimerEvent: {}
+[20.938708] (-) TimerEvent: {}
+[21.038998] (-) TimerEvent: {}
+[21.139330] (-) TimerEvent: {}
+[21.239621] (-) TimerEvent: {}
+[21.339967] (-) TimerEvent: {}
+[21.440329] (-) TimerEvent: {}
+[21.540682] (-) TimerEvent: {}
+[21.641024] (-) TimerEvent: {}
+[21.741604] (-) TimerEvent: {}
+[21.842572] (-) TimerEvent: {}
+[21.943755] (-) TimerEvent: {}
+[22.044782] (-) TimerEvent: {}
+[22.145799] (-) TimerEvent: {}
+[22.247072] (-) TimerEvent: {}
+[22.348138] (-) TimerEvent: {}
+[22.449187] (-) TimerEvent: {}
+[22.550032] (-) TimerEvent: {}
+[22.650486] (-) TimerEvent: {}
+[22.751251] (-) TimerEvent: {}
+[22.852536] (-) TimerEvent: {}
+[22.953519] (-) TimerEvent: {}
+[23.054523] (-) TimerEvent: {}
+[23.155548] (-) TimerEvent: {}
+[23.256534] (-) TimerEvent: {}
+[23.357572] (-) TimerEvent: {}
+[23.458562] (-) TimerEvent: {}
+[23.559292] (-) TimerEvent: {}
+[23.659774] (-) TimerEvent: {}
+[23.760786] (-) TimerEvent: {}
+[23.861792] (-) TimerEvent: {}
+[23.962837] (-) TimerEvent: {}
+[24.063821] (-) TimerEvent: {}
+[24.165042] (-) TimerEvent: {}
+[24.266016] (-) TimerEvent: {}
+[24.367047] (-) TimerEvent: {}
+[24.467848] (-) TimerEvent: {}
+[24.568198] (-) TimerEvent: {}
+[24.668465] (-) TimerEvent: {}
+[24.768768] (-) TimerEvent: {}
+[24.869037] (-) TimerEvent: {}
+[24.969347] (-) TimerEvent: {}
+[25.069633] (-) TimerEvent: {}
+[25.169990] (-) TimerEvent: {}
+[25.270365] (-) TimerEvent: {}
+[25.370703] (-) TimerEvent: {}
+[25.471034] (-) TimerEvent: {}
+[25.571576] (-) TimerEvent: {}
+[25.672630] (-) TimerEvent: {}
+[25.774058] (-) TimerEvent: {}
+[25.875068] (-) TimerEvent: {}
+[25.976122] (-) TimerEvent: {}
+[26.077189] (-) TimerEvent: {}
+[26.178270] (-) TimerEvent: {}
+[26.279534] (-) TimerEvent: {}
+[26.380584] (-) TimerEvent: {}
+[26.481357] (-) TimerEvent: {}
+[26.581911] (-) TimerEvent: {}
+[26.682922] (-) TimerEvent: {}
+[26.783934] (-) TimerEvent: {}
+[26.884974] (-) TimerEvent: {}
+[26.986065] (-) TimerEvent: {}
+[27.087116] (-) TimerEvent: {}
+[27.188160] (-) TimerEvent: {}
+[27.289181] (-) TimerEvent: {}
+[27.390025] (-) TimerEvent: {}
+[27.490351] (-) TimerEvent: {}
+[27.590672] (-) TimerEvent: {}
+[27.690992] (-) TimerEvent: {}
+[27.791361] (-) TimerEvent: {}
+[27.891706] (-) TimerEvent: {}
+[27.913948] (yolo_xy_pkg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable yolo_xy_node\x1b[0m\n'}
+[27.991911] (-) TimerEvent: {}
+[28.092354] (-) TimerEvent: {}
+[28.167809] (yolo_xy_pkg) StderrLine: {'line': b'/usr/bin/ld: warning: libopencv_imgcodecs.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgcodecs.so.409\n'}
+[28.168855] (yolo_xy_pkg) StderrLine: {'line': b'/usr/bin/ld: warning: libopencv_imgproc.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgproc.so.409\n'}
+[28.169919] (yolo_xy_pkg) StderrLine: {'line': b'/usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.409\n'}
+[28.192491] (-) TimerEvent: {}
+[28.292813] (-) TimerEvent: {}
+[28.393164] (-) TimerEvent: {}
+[28.493694] (-) TimerEvent: {}
+[28.595933] (-) TimerEvent: {}
+[28.698456] (-) TimerEvent: {}
+[28.800004] (-) TimerEvent: {}
+[28.901489] (-) TimerEvent: {}
+[29.002542] (-) TimerEvent: {}
+[29.103700] (-) TimerEvent: {}
+[29.204738] (-) TimerEvent: {}
+[29.305633] (-) TimerEvent: {}
+[29.339988] (yolo_xy_pkg) StdoutLine: {'line': b'[100%] Built target yolo_xy_node\n'}
+[29.345154] (yolo_xy_pkg) CommandEnded: {'returncode': 0}
+[29.345701] (yolo_xy_pkg) JobProgress: {'identifier': 'yolo_xy_pkg', 'progress': 'install'}
+[29.346248] (yolo_xy_pkg) Command: {'cmd': ['/home/zhongrui/bin/cmake', '--install', '/home/zhongrui/code/ws/build/yolo_xy_pkg'], 'cwd': '/home/zhongrui/code/ws/build/yolo_xy_pkg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh:en_US:en'), ('USER', 'zhongrui'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('ALLUSERSPROFILE', '/opt/MVS/MVFG'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/zhongrui/code/ws/install/center_msg_pkg/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/local/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32'), ('HOME', '/home/zhongrui'), ('CHROME_DESKTOP', 'code.desktop'), ('CONDA_SHLVL', '0'), ('TERM_PROGRAM_VERSION', '1.104.0'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '3290'), ('SYSTEMD_EXEC_PID', '3479'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5047'), ('CPLUS_INCLUDE_PATH', '/usr/local/include/opencv4:'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'zhongrui'), ('JOURNAL_STREAM', '8:18703'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zhongrui'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('MVCAM_SDK_PATH', '/opt/MVS'), ('PATH', '/home/zhongrui/anaconda3/condabin:/opt/cmake/bin:/opt/ros/humble/bin:/home/zhongrui/.local/bin:/home/zhongrui/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mi:@/tmp/.ICE-unix/3440,unix/mi:/tmp/.ICE-unix/3440'), ('INVOCATION_ID', '10e058f6aeb348a496c9cee2021489e3'), ('MVCAM_GENICAM_CLPROTOCOL', '/opt/MVS/lib/CLProtocol'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('PYTHONSTARTUP', '/home/zhongrui/.config/Code/User/workspaceStorage/0258f086bab9b96ce2d0eca67837ab33/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1BQFJ3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-d75edd2444.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/zhongrui/code/ws/install/center_msg_pkg:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/zhongrui/anaconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/zhongrui/code/ws/build/yolo_xy_pkg'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/zhongrui/anaconda3/bin/conda'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/zhongrui/code/ws/install/center_msg_pkg/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('MVCAM_SDK_VERSION', ''), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('MVCAM_COMMON_RUNENV', '/opt/MVS/lib'), ('CMAKE_PREFIX_PATH', '/home/zhongrui/code/ws/install/center_msg_pkg:/opt/ros/humble')]), 'shell': False}
+[29.347987] (yolo_xy_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[29.348263] (yolo_xy_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/yolo_xy_pkg/lib/yolo_xy_pkg/yolo_xy_node\n'}
+[29.351356] (yolo_xy_pkg) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/zhongrui/code/ws/install/yolo_xy_pkg/lib/yolo_xy_pkg/yolo_xy_node" to ""\n'}
+[29.351579] (yolo_xy_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/yolo_xy_pkg/share/yolo_xy_pkg/config\n'}
+[29.351670] (yolo_xy_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/yolo_xy_pkg/share/yolo_xy_pkg/config/para.yaml\n'}
+[29.351799] (yolo_xy_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/yolo_xy_pkg/share/ament_index/resource_index/package_run_dependencies/yolo_xy_pkg\n'}
+[29.351890] (yolo_xy_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/yolo_xy_pkg/share/ament_index/resource_index/parent_prefix_path/yolo_xy_pkg\n'}
+[29.351970] (yolo_xy_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/yolo_xy_pkg/share/yolo_xy_pkg/environment/ament_prefix_path.sh\n'}
+[29.352034] (yolo_xy_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/yolo_xy_pkg/share/yolo_xy_pkg/environment/ament_prefix_path.dsv\n'}
+[29.352118] (yolo_xy_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/yolo_xy_pkg/share/yolo_xy_pkg/environment/path.sh\n'}
+[29.352223] (yolo_xy_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/yolo_xy_pkg/share/yolo_xy_pkg/environment/path.dsv\n'}
+[29.352290] (yolo_xy_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/yolo_xy_pkg/share/yolo_xy_pkg/local_setup.bash\n'}
+[29.352377] (yolo_xy_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/yolo_xy_pkg/share/yolo_xy_pkg/local_setup.sh\n'}
+[29.352454] (yolo_xy_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/yolo_xy_pkg/share/yolo_xy_pkg/local_setup.zsh\n'}
+[29.352529] (yolo_xy_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/yolo_xy_pkg/share/yolo_xy_pkg/local_setup.dsv\n'}
+[29.352609] (yolo_xy_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/yolo_xy_pkg/share/yolo_xy_pkg/package.dsv\n'}
+[29.352710] (yolo_xy_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/yolo_xy_pkg/share/ament_index/resource_index/packages/yolo_xy_pkg\n'}
+[29.352827] (yolo_xy_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/yolo_xy_pkg/share/yolo_xy_pkg/cmake/yolo_xy_pkgConfig.cmake\n'}
+[29.352909] (yolo_xy_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/yolo_xy_pkg/share/yolo_xy_pkg/cmake/yolo_xy_pkgConfig-version.cmake\n'}
+[29.352995] (yolo_xy_pkg) StdoutLine: {'line': b'-- Installing: /home/zhongrui/code/ws/install/yolo_xy_pkg/share/yolo_xy_pkg/package.xml\n'}
+[29.354302] (yolo_xy_pkg) CommandEnded: {'returncode': 0}
+[29.361541] (yolo_xy_pkg) JobEnded: {'identifier': 'yolo_xy_pkg', 'rc': 0}
+[29.362393] (-) EventReactorShutdown: {}

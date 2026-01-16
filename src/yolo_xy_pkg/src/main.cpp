@@ -31,7 +31,7 @@ public:
 
         RCLCPP_INFO(this->get_logger(), "发布者节点已启动");
 
-        command_subscribe_ = this->create_subscription<sensor_msgs::msg::Image>("image", 0, std::bind(&TargetxySubscriber::command_callback, this, std::placeholders::_1));
+        command_subscribe_ = this->create_subscription<sensor_msgs::msg::Image>("image", 1, std::bind(&TargetxySubscriber::command_callback, this, std::placeholders::_1));
         RCLCPP_INFO(this->get_logger(), "接收者节点已启动");
     }
 

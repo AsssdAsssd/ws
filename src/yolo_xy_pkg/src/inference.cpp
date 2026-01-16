@@ -6,12 +6,9 @@ Inference::Inference(const std::string &onnxModelPath, const cv::Size &modelInpu
     modelShape = modelInputShape;
     classesPath = classesTxtFile;
     cudaEnabled = runWithCuda;
-
-
     modelConfidenceThreshold=ConfidenceThreshold;
     modelScoreThreshold=ScoreThreshold;
     modelNMSThreshold=NMSThreshold;
-    std::cout<<ConfidenceThreshold<<"  "<<ScoreThreshold<<"   "<<NMSThreshold;
     loadClassesFromFile();
     loadOnnxNetwork();
 
